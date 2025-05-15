@@ -45,9 +45,9 @@
         </div>
 
         <div class="swiper-slide card-filme">
-          <img src="partials/homemaranha.png" alt="Homem-Aranha" />
+          <img src="partials/velozes.png" alt="VElozes e Furuozos 11" />
           <div class="info">
-            <h3>Homem-Aranha</h3>
+            <h3>velozes e Furiozos</h3>
             <p>Autor: Marvel</p>
           </div>
         </div>
@@ -57,6 +57,35 @@
       </div>
     </div>
   </section>
+
+<?php
+$filmes = [
+    ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "imagem" => "partials/velozes.png"],
+    ["titulo" => "Milionário e José Rico", "autor" => "Showlivre", "imagem" => "partials/milionario.jpg"],
+    ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
+    ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
+    ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
+    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
+    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" =>"NBA", "imagem" => "partials/nba.jpg"],
+];
+?>
+
+<section class="carrossel-netflix">
+  <h2 class="catalogo-titulo">Mais Populares</h2>
+  <div class="container-carrossel">
+    <?php foreach ($filmes as $filme): ?>
+      <div class="filme-card">
+        <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
+        <div class="info">
+          <h3><?= $filme['titulo'] ?></h3>
+          <p><?= $filme['autor'] ?></p>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+
+
 
   
  

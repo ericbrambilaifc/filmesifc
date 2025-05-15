@@ -105,7 +105,7 @@ nav a {
 /* Carrossel estilo Netflix */
 .catalogo-section {
   padding: 30px 20px;
-  background-color: #000;
+  background-color: #dbdbdb;
   color: #fff;
 }
 
@@ -148,3 +148,112 @@ nav a {
 }
 
         
+/*catalado*/
+.catalogo-titulo {
+    font-size: 24px;
+    margin: 20px 40px;
+    color: #770000;
+}
+
+/* Grade de filmes estilo retângulo Netflix */
+.grade-catalogo {
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.filmes-grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.filme-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.filme-card:hover {
+    transform: scale(1.05);
+}
+
+.filme-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.filme-card .info {
+    padding: 10px;
+}
+
+.filme-card .info h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.filme-card .info p {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+
+
+/*grade de filmes */
+
+.carrossel-netflix {
+  padding: 20px;
+  background-color: #dbdbdb;
+  color: white;
+}
+
+.container-carrossel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.container-carrossel::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
+
+.filme-card {
+  min-width: 200px;
+  flex: 0 0 auto;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.filme-card:hover {
+  transform: scale(1.05);
+}
+
+.filme-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.filme-card .info {
+  padding: 10px;
+}
+
+.filme-card .info h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.filme-card .info p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
