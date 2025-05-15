@@ -13,7 +13,6 @@ html, body {
 }
 
 
-
 header {
     display: flex;
     justify-content: center;
@@ -73,8 +72,11 @@ header h3 {
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    margin: 10px;
     transition: width 0.3s ease, padding 0.3s ease;
+}
+
+#botao a {
+    margin-top: 10px;
 }
 
 #botao:hover {
@@ -83,7 +85,7 @@ header h3 {
 }
 
 #botao-main{
-    margin-left: 270px;
+    margin-left: 250px;
     margin-top: 150px;
 }
 
