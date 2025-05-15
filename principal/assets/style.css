@@ -55,6 +55,22 @@ header h3 {
     margin-top: 30px;
 }
 
+#botao {
+    background-color: #770000;
+    border-radius: 10px;
+    width: 12%;
+    color: #ddd;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#botao:hover {
+    width: 14%; /* ou 15%, conforme desejar */
+}
+
 
 /* filmes */
 

@@ -29,10 +29,21 @@
 
     <main class="row">
         <div class="d-flex justify-content-center">
+
             <h3 id="text-conheca" class="flex-grow-2 p-2 mb-4">Seja bem vindo! (nome de usuario) <br> Conheça o melhor site para conhecer filmes</h3>
             <img class="w-25" id="image-avatar" src="./assets/avatar.svg" alt="">
 
+
+
         </div>
+
+        <div id="botao-main" class="">
+            <a id="botao" class="" href="filmes.php">Conheça nossos filmes</a>
+            <a id="botao" class="" href="serie.php">Conheça nossas series</a>
+
+        </div>
+
+
 
     </main>
 
