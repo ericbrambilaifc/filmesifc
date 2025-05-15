@@ -92,28 +92,202 @@ header h3 {
 
 /* filmes */
 
- .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-        }
+ header {
+  background-color: #770000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+nav a {
+  color: white;
+  text-decoration: none;
+}
 
-  
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+/* Carrossel estilo Netflix */
+.catalogo-section {
+  padding: 30px 20px;
+  background-color: #dbdbdb;
+  color: #fff;
+}
+
+.catalogo-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.swiper-slide.card-filme {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-slide.card-filme:hover {
+  transform: scale(1.05);
+}
+
+.card-filme img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-filme .info {
+  padding: 10px;
+}
+
+.card-filme .info h3 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.card-filme .info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
         
+/*catalado*/
+.catalogo-titulo {
+    font-size: 24px;
+    margin: 20px 40px;
+    color: #770000;
+}
+
+/* Grade de filmes estilo retângulo Netflix */
+.grade-catalogo {
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.filmes-grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.filme-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.filme-card:hover {
+    transform: scale(1.05);
+}
+
+.filme-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.filme-card .info {
+    padding: 10px;
+}
+
+.filme-card .info h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.filme-card .info p {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+
+
+/*grade de filmes */
+
+.carrossel-netflix {
+  padding: 20px;
+  background-color: #dbdbdb;
+  color: white;
+}
+
+.container-carrossel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.container-carrossel::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
+
+.filme-card {
+  min-width: 200px;
+  flex: 0 0 auto;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.filme-card:hover {
+  transform: scale(1.05);
+}
+
+.filme-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.filme-card .info {
+  padding: 10px;
+}
+
+.filme-card .info h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.filme-card .info p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
