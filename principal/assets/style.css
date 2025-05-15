@@ -38,8 +38,22 @@ header h3 {
     color: #770000;
     font-weight: 600;
     font-size: 40px;
+    margin-top: 70px;
 }
 
+
+#bem-vindo {
+    display: flex;
+    justify-content: center;
+}
+
+#image-avatar {
+    margin: 30px;
+} 
+
+#text-conheca {
+    margin-top: 30px;
+}
 
 
 /* filmes */
