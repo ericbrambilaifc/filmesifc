@@ -39,7 +39,7 @@
       <section class="cards">
         <div class="card">
           <img src="#" alt="#" />
-          <h2>Harry Potter</h2>
+          <h2>Harry Potter 434343</h2>
           <p>Autor: J. K. Rowling</p>
           <button id="corfundo">Assistir</button>
         </div>
