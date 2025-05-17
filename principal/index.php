@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,16 @@
 </head>
 
 <body>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+
 
     <!-- Modal -->
     <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
@@ -35,13 +45,18 @@
 
 
     <header id="header">
-        <h3 class="fw-bold">Filmes +</h3>
+
+
+        <h3 class="fw-bold">
+            <a href="index.php" style="color: inherit; text-decoration: none; font-weight: 600;">Filmes +</a>
+        </h3>
+
         <section id="lado-2">
 
-            <a class="fw-bold px-2" href="">Series</a>
-            <a class="fw-bold px-2" href="filmes.php">Filmes</a>
-            <a class="fw-bold px-2" href="">Sobre Nós</a>
-            <a class="fw-bold px-2 " href="">Contato</a>
+            <a class="px-2" href="">Series</a>
+            <a class="px-2" href="filmes.php">Filmes</a>
+            <a class="px-2" href="sobre.php">Sobre Nós</a>
+            <a class="px-2 " href="">Contato</a>
         </section>
 
     </header>
@@ -49,15 +64,17 @@
     <main class="row">
         <div class="d-flex justify-content-center   ">
 
-            <div id="botao-main" class="">
+            <section id="central" class="">
                 <h3 id="text-conheca">
-                    Seja bem vindo! <span id="usuarioNome">(nome de usuário)</span> <br>
+                    Seja bem vindo! <span id="usuarioNome"></span> <br>
                     Conheça o melhor site para conhecer filmes
                 </h3>
-                <a id="botao" class="" href="filmes.php">Conheça nossos filmes</a>
-                <a id="botao" class="" href="serie.php">Conheça nossas series</a>
-            </div>
-            <div class="">
+                <div id="botao-main">
+                    <a id="botao" class="text-light" href="filmes.php">Conheça nossos filmes</a>
+                    <a id="botao" class="mx-3 text-light" href="serie.php">Conheça nossas series</a>
+                </div>
+            </section>
+            <div id="img-avatar">
                 <img class="w-75" id="image-avatar" src="./assets/avatar.svg" alt="">
             </div>
 
@@ -66,8 +83,7 @@
 
 
 </body>
-<script>
-    // Quando a página carregar, mostra o modal
+<!-- <script>
     window.onload = () => {
         const modal = new bootstrap.Modal(document.getElementById('userModal'));
         modal.show();
@@ -82,7 +98,7 @@
             }
         });
     };
-</script>
+</script> -->
 
 
 </html>

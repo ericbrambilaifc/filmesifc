@@ -6,12 +6,6 @@
   padding: 0;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; 
-}
-
 
 header {
     display: flex;
@@ -75,20 +69,29 @@ header h3 {
     transition: width 0.3s ease, padding 0.3s ease;
 }
 
+#botao:hover {
+    width: 14%;
+    padding: 13px; 
+}
 #botao a {
     margin-top: 10px;
 }
 
-#botao:hover {
-    width: 15%;
-    padding: 17px; 
+
+
+#central{
+    margin-left: 260px;
+    margin-top: 100px;
 }
 
-#botao-main{
-    margin-left: 250px;
-    margin-top: 150px;
+#botao-main {
+    margin-top: 50px;
+
 }
 
+#img-avatar {
+  margin-right: 40px;
+}
 
 /* filmes */
 
@@ -253,7 +256,7 @@ nav a {
 }
 
 .container-carrossel::-webkit-scrollbar {
-  display: none; /* Oculta a barra de rolagem */
+  display: none; 
 }
 
 .filme-card {
@@ -290,4 +293,17 @@ nav a {
 .filme-card .info p {
   font-size: 0.85rem;
   color: #ccc;
+}
+
+
+/* sobre nos */ 
+
+#sobre-titulo {
+  color: #770000;
+}
+
+#image-avatar-contato {
+  width: 450px;
+  margin-right: 40px;
+  margin-top: 30px;
 }

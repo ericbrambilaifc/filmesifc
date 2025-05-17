@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -15,9 +17,10 @@
     <h1>Catálogo de Filmes</h1>
     <nav>
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Autores</a></li>
         <li><a href="index.php">Home</a></li>
+        <li><a href="serie.php">Series</a></li>
+
+        <li><a href="#">Autores</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)">Gênero</a>
           <div class="dropdown-content">
@@ -58,38 +61,39 @@
     </div>
   </section>
 
-<?php
-$filmes = [
+  <?php
+  $filmes = [
     ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "imagem" => "partials/velozes.png"],
     ["titulo" => "Milionário e José Rico", "autor" => "Showlivre", "imagem" => "partials/milionario.jpg"],
     ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
     ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
     ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
-    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" =>"NBA", "imagem" => "partials/nba.jpg"],
-];
-?>
+    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
+  ];
+  ?>
 
-<section class="carrossel-netflix">
-  <h2 class="catalogo-titulo">Mais Populares</h2>
-  <div class="container-carrossel">
-    <?php foreach ($filmes as $filme): ?>
-      <div class="filme-card">
-        <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
-        <div class="info">
-          <h3><?= $filme['titulo'] ?></h3>
-          <p><?= $filme['autor'] ?></p>
+  <section class="carrossel-netflix">
+    <h2 class="catalogo-titulo">Mais Populares</h2>
+    <div class="container-carrossel">
+      <?php foreach ($filmes as $filme): ?>
+        <div class="filme-card">
+          <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
+          <div class="info">
+            <h3><?= $filme['titulo'] ?></h3>
+            <p><?= $filme['autor'] ?></p>
+          </div>
         </div>
-      </div>
-    <?php endforeach; ?>
-  </div>
-</section>
+      <?php endforeach; ?>
+    </div>
+  </section>
 
 
 
-  
- 
- 
+
+
+
 
 </body>
+
 </html>
