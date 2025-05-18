@@ -94,8 +94,8 @@ header h3 {
 }
 
 /* filmes */
-
- header {
+/* Estilização do Header */
+header {
   background-color: #770000;
   color: #fff;
   padding: 20px;
@@ -116,6 +116,7 @@ nav a {
   text-decoration: none;
 }
 
+/* Dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -139,17 +140,17 @@ nav a {
   background-color: #444;
 }
 
-/* Carrossel estilo Netflix */
-.catalogo-section {
+/* Carrossel estilo Netflix homem aranha  */
+.catalogo-section, .carrossel-netflix {
   padding: 30px 20px;
   background-color: #dbdbdb;
-  color: #fff;
 }
 
 .catalogo-titulo {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 20px 40px;
+  color: #770000;
 }
 
 .swiper-slide.card-filme {
@@ -160,9 +161,7 @@ nav a {
   cursor: pointer;
 }
 
-.swiper-slide.card-filme:hover {
-  transform: scale(1.05);
-}
+
 
 .card-filme img {
   width: 100%;
@@ -184,83 +183,11 @@ nav a {
   color: #ccc;
 }
 
-        
-/*catalado*/
-.catalogo-titulo {
-    font-size: 24px;
-    margin: 20px 40px;
-    color: #770000;
-}
 
-/* Grade de filmes estilo retângulo Netflix */
-.grade-catalogo {
-    padding: 20px 40px;
-    background-color: #fff;
-}
-
-.filmes-grade {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-}
-
-.filme-card {
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.filme-card:hover {
-    transform: scale(1.05);
-}
-
-.filme-card img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-
-.filme-card .info {
-    padding: 10px;
-}
-
-.filme-card .info h3 {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.filme-card .info p {
-    font-size: 0.85rem;
-    color: #777;
-}
-
-
-
-/*grade de filmes */
-
-.carrossel-netflix {
-  padding: 20px;
-  background-color: #dbdbdb;
-  color: white;
-}
-
-.container-carrossel {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
-
-.container-carrossel::-webkit-scrollbar {
-  display: none; 
-}
-
-.filme-card {
-  min-width: 200px;
+/* Estilização dos Cards */
+.filme-card, .filme-card2, .homem-de-ferro-card {
+  width: 200px;
+  height: 300px;
   flex: 0 0 auto;
   background-color: #222;
   border-radius: 8px;
@@ -270,34 +197,51 @@ nav a {
   transition: transform 0.3s;
 }
 
-.filme-card:hover {
+.filme-card:hover, .filme-card2:hover, .homem-de-ferro-card:hover {
   transform: scale(1.05);
 }
 
-.filme-card img {
+.filme-card img, .filme-card2 img, .homem-de-ferro-card img {
   width: 100%;
-  height: 260px;
+  height: 70%;
   object-fit: cover;
 }
 
-.filme-card .info {
+.filme-card .info, .filme-card2 .info, .homem-de-ferro-card .info {
   padding: 10px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.filme-card .info h3 {
+.filme-card .info h3, .filme-card2 .info h3, .homem-de-ferro-card .info h3 {
   font-size: 1rem;
-  margin-bottom: 4px;
   color: #fff;
 }
 
-.filme-card .info p {
+.filme-card .info p, .filme-card2 .info p, .homem-de-ferro-card .info p {
   font-size: 0.85rem;
   color: #ccc;
 }
 
+/* Estilização do carrossel */
+.container-carrossel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
 
-/* sobre nos */ 
+.container-carrossel::-webkit-scrollbar {
+  display: none;
+}
 
+
+
+/* Seção Sobre */
 #sobre-titulo {
   color: #770000;
 }

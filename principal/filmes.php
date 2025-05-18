@@ -19,7 +19,6 @@
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="serie.php">Series</a></li>
-
         <li><a href="#">Autores</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)">Gênero</a>
@@ -48,14 +47,12 @@
         </div>
 
         <div class="swiper-slide card-filme">
-          <img src="partials/velozes.png" alt="VElozes e Furuozos 11" />
+          <img src="partials/velozes.png" alt="VElozes e Furiozos 11" />
           <div class="info">
-            <h3>velozes e Furiozos</h3>
-            <p>Autor: Marvel</p>
+            <h3>Velozes e Furiosos</h3>
+            <p>Autor: Universal</p>
           </div>
         </div>
-
-
 
       </div>
     </div>
@@ -63,82 +60,75 @@
 
   <?php
   $filmes = [
-    ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "imagem" => "partials/velozes.png"],
-    ["titulo" => "Milionário e José Rico", "autor" => "Showlivre", "imagem" => "partials/milionario.jpg"],
-    ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
-    ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
-    ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
-    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
-    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
-    ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
- 
-
+      ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "imagem" => "partials/velozes.png"],
+      ["titulo" => "Milionário e José Rico", "autor" => "Showlivre", "imagem" => "partials/milionario.jpg"],
+      ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
+      ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
+      ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
+      ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
+      ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
+      ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
   ];
-
-  for ($i = 0; $i < count($filmes); $i++) {
-  
-    ?>
-
-
-    <section class="carrossel-netflix">
-    <h2 class="catalogo-titulo">Mais Populares</h2>
-    <div class="container-carrossel">
-     
-      <div class="filme-card">
-        <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
-        <div class="info">
-          <h3><?= $filmes[$i]['titulo'] ?></h3>
-          <p><?= $filmes[$i]['autor'] ?></p>
-        </div>
-      </div>
-    
-   
-    <?php
-    }
-    
-    ?>
- </section>
-  </div>
-
-
-<?php 
-  
-  $filmes2=[
-
-    ["titulo" => "Os Sete Monstrinhos", "autor" => "Universal", "imagem" => "partials/Monstrinhos"],
-    ["titulo" => "The Office", "autor" => "Showlivre", "imagem" => "partials/"],
-    ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
-    ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
-    ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
-    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
-    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
-    ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
-  ];
-  for ($i=0; $i <count($filmes2) ; $i++) { 
-    # code...
-
-?>
-
-    <section class="carrossel-netflix2">
-    <h2 class="catalogo-titulo2">Para você</h2>
-    <div class="container-carrossel2">
-     
-      <div class="filme-card2">
-        <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
-        <div class="info">
-          <h3><?= $filmes2[$i]['titulo'] ?></h3>
-          <p><?= $filmes2[$i]['autor'] ?></p>
-        </div>
-      </div>
-
-  
-
-<?php 
-  }
   ?>
 
+  <section class="carrossel-netflix">
+    <h2 class="catalogo-titulo">Mais Populares</h2>
+    <div class="container-carrossel">
+      <?php 
+      for ($i = 0; $i < count($filmes); $i++) { 
+      ?>
+          <div class="filme-card">
+              <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
+              <div class="info">
+                  <h3><?= $filmes[$i]['titulo'] ?></h3>
+                  <p><?= $filmes[$i]['autor'] ?></p>
+              </div>
+          </div>
+      <?php 
+      } 
+      ?>
+    </div>
+  </section>
 
+  <!-- Separação do Homem de Ferro 4 -->
+  <section class="homem-de-ferro-section">
+    <h2 class="catalogo-titulo">Destaque Especial</h2>
+    <div class="container-carrossel">
+      <div class="homem-de-ferro-card">
+        <img src="partials/homem.jpg" alt="Homem de Ferro 4" />
+        <div class="info">
+          <h3>Homem de Ferro 4</h3>
+          <p>Autor: Universal</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <?php 
+  $filmes2 = [
+      ["titulo" => "The Office", "autor" => "Showlivre", "imagem" => "partials/theoffice.jpg"],
+      ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "imagem" => "partials/monstrinhos.jpg"],
+  ];
+  ?>
+
+  <section class="carrossel-netflix">
+    <h2 class="catalogo-titulo">Para Você</h2>
+    <div class="container-carrossel">
+      <?php 
+      for ($i = 0; $i < count($filmes2); $i++) { 
+      ?>
+          <div class="filme-card">
+              <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
+              <div class="info">
+                  <h3><?= $filmes2[$i]['titulo'] ?></h3>
+                  <p><?= $filmes2[$i]['autor'] ?></p>
+              </div>
+          </div>
+      <?php 
+      } 
+      ?>
+    </div>
+  </section>
 
 </body>
 
