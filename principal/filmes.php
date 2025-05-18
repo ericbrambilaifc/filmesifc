@@ -106,7 +106,9 @@
 </section>
 
 
-
+ <section class="carrossel-netflix">
+    <h2 class="catalogo-titulo">Para você</h2>
+    <div class="container-carrossel">
   <?php 
   $filmes2 = [
       ["titulo" => "The Office", "autor" => "Showlivre","ano"=> 1999,"oscars"=>0, "imagem" => "partials/theoffice.jpg"],
@@ -128,7 +130,8 @@
 <?php 
 } 
 ?>
-
+</div>
+</section>
 
 
 </body>
