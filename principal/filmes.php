@@ -90,19 +90,6 @@
     </div>
   </section>
 
-  <!-- Separação do Homem de Ferro 4 -->
-  <section class="homem-de-ferro-section">
-    <h2 class="catalogo-titulo">Destaque Especial</h2>
-    <div class="container-carrossel">
-      <div class="homem-de-ferro-card">
-        <img src="partials/homem.jpg" alt="Homem de Ferro 4" />
-        <div class="info">
-          <h3>Homem de Ferro 4</h3>
-          <p>Autor: Universal</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <?php 
   $filmes2 = [

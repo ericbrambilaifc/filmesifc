@@ -120,7 +120,7 @@ nav a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color: #a9a7a7;
   padding: 10px;
   z-index: 1;
 }
@@ -143,7 +143,7 @@ nav a {
 /* Carrossel estilo Netflix homem aranha  */
 .catalogo-section, .carrossel-netflix {
   padding: 30px 20px;
-  background-color: #dbdbdb;
+  background-color: #999999;
 }
 
 .catalogo-titulo {
@@ -175,17 +175,17 @@ nav a {
 
 .card-filme .info h3 {
   font-size: 16px;
-  color: #fff;
+  color: #999999;
 }
 
 .card-filme .info p {
   font-size: 14px;
-  color: #ccc;
+  color: #999999;
 }
 
 
 /* Estilização dos Cards */
-.filme-card, .filme-card2, .homem-de-ferro-card {
+.filme-card, .filme-card2 {
   width: 200px;
   height: 300px;
   flex: 0 0 auto;
@@ -197,17 +197,18 @@ nav a {
   transition: transform 0.3s;
 }
 
-.filme-card:hover, .filme-card2:hover, .homem-de-ferro-card:hover {
+.filme-card:hover, .filme-card2:hover{
   transform: scale(1.05);
+  
 }
 
-.filme-card img, .filme-card2 img, .homem-de-ferro-card img {
+.filme-card img, .filme-card2 img {
   width: 100%;
   height: 70%;
   object-fit: cover;
 }
 
-.filme-card .info, .filme-card2 .info, .homem-de-ferro-card .info {
+.filme-card .info, .filme-card2 .info{
   padding: 10px;
   height: 30%;
   display: flex;
@@ -216,12 +217,12 @@ nav a {
   text-align: center;
 }
 
-.filme-card .info h3, .filme-card2 .info h3, .homem-de-ferro-card .info h3 {
+.filme-card .info h3, .filme-card2 .info h3 {
   font-size: 1rem;
   color: #fff;
 }
 
-.filme-card .info p, .filme-card2 .info p, .homem-de-ferro-card .info p {
+.filme-card .info p, .filme-card2 .info p {
   font-size: 0.85rem;
   color: #ccc;
 }
