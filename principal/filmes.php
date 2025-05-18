@@ -70,26 +70,72 @@
     ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
     ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
-  ];
-  ?>
+    ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
+ 
 
-  <section class="carrossel-netflix">
+  ];
+
+  for ($i = 0; $i < count($filmes); $i++) {
+  
+    ?>
+
+
+    <section class="carrossel-netflix">
     <h2 class="catalogo-titulo">Mais Populares</h2>
     <div class="container-carrossel">
-      <?php foreach ($filmes as $filme): ?>
-        <div class="filme-card">
-          <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
-          <div class="info">
-            <h3><?= $filme['titulo'] ?></h3>
-            <p><?= $filme['autor'] ?></p>
-          </div>
+     
+      <div class="filme-card">
+        <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
+        <div class="info">
+          <h3><?= $filmes[$i]['titulo'] ?></h3>
+          <p><?= $filmes[$i]['autor'] ?></p>
         </div>
-      <?php endforeach; ?>
-    </div>
-  </section>
+      </div>
+    
+   
+    <?php
+    }
+    
+    ?>
+ </section>
+  </div>
 
 
+<?php 
+  
+  $filmes2=[
 
+    ["titulo" => "Os Sete Monstrinhos", "autor" => "Universal", "imagem" => "partials/Monstrinhos"],
+    ["titulo" => "The Office", "autor" => "Showlivre", "imagem" => "partials/"],
+    ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
+    ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
+    ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
+    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
+    ["titulo" => "NBA Dnver Nuggs x Los Angles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
+    ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
+  ];
+  for ($i=0; $i <count($filmes2) ; $i++) { 
+    # code...
+
+?>
+
+    <section class="carrossel-netflix2">
+    <h2 class="catalogo-titulo2">Para você</h2>
+    <div class="container-carrossel2">
+     
+      <div class="filme-card2">
+        <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
+        <div class="info">
+          <h3><?= $filmes2[$i]['titulo'] ?></h3>
+          <p><?= $filmes2[$i]['autor'] ?></p>
+        </div>
+      </div>
+
+  
+
+<?php 
+  }
+  ?>
 
 
 
