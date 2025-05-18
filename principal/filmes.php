@@ -107,6 +107,7 @@
 
 
  <section class="carrossel-netflix">
+
     <h2 class="catalogo-titulo">Para você</h2>
     <div class="container-carrossel">
   <?php 
@@ -114,11 +115,16 @@
       ["titulo" => "The Office", "autor" => "Showlivre","ano"=> 1999,"oscars"=>0, "imagem" => "partials/theoffice.jpg"],
       ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre","ano"=> 1998, "oscars"=>0, "imagem" => "partials/monstrinhos.jpg"],
     ["titulo" =>"Homem de Ferro 4", "autor" => "Ryan de Oliveira", "ano"=> 2028,"oscars"=> 0,"imagem" => "partials/homem.jpg"],
+     ["titulo" => "PSG x Inter 2025", "autor" => "Champions League","ano"=> 2025, "oscars"=>"Jogos Ao vivo", "imagem" => "partials/psg.jpg"],
+      ["titulo" => "Chaves", "autor" => "Televisa", "ano"=> 1999, "oscars"=>0, "imagem" => "partials/chaves.jpg"],
+      ["titulo" => "Breaking Bad", "autor" => "AMC","ano"=> 2005, "oscars" =>1, "imagem" => "partials/BreakingBad.jpg"],
+      ["titulo" => "Kick Buttowski", "autor" => "Disney XD","ano"=> 2000, "oscars" =>0, "imagem" => "partials/kick.jpg"],
+      ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano"=>2025, "oscars"=> "Jogos Ao vivo", "imagem" => "partials/nba.jpg"],
+      ["titulo" => "Lua", "autor" => "Disney","ano"=> 2024,"oscars"=> 0,"imagem" => "partials/lua.jpg"],
   ];
   for ($i = 0; $i < count($filmes2); $i++) { 
   ?>
-
-
+<dialog>
 
     <div class="filme-card" onclick="mostrarDetalhes('<?= $filmes2[$i]['titulo'] ?>', '<?= $filmes2[$i]['autor'] ?>', <?= $filmes2[$i]['ano'] ?>, <?= $filmes2[$i]['oscars'] ?>, '<?= $filmes2[$i]['imagem'] ?>')">
         <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
@@ -130,6 +136,7 @@
 <?php 
 } 
 ?>
+</dialog>
 </div>
 </section>
 

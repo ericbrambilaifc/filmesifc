@@ -17,8 +17,11 @@
     });
   });
 
+  
+  
 
 function mostrarDetalhes(titulo, autor, ano, oscars, imagem) {
+ 
   console.log("Abrindo modal para: " + titulo); // Verifica se a função foi chamada
   document.getElementById('modalTitulo').innerText = titulo;
   document.getElementById('modalAutor').innerText = "Autor: " + autor;
