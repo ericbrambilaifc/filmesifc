@@ -12,6 +12,7 @@
 
 <body>
 
+
   <!-- Navbar -->
   <header id="header">
     <h1>Catálogo de Filmes</h1>
@@ -58,26 +59,40 @@
     </div>
   </section>
 
+  <!-- Modal para exibir detalhes do filme -->
+<div id="modalFilme" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <img id="modalImagem" src="" alt="">
+    <h2 id="modalTitulo"></h2>
+    <p id="modalAutor"></p>
+    <p id="modalAno"></p>
+    <p id="modalOscars"></p>
+    <button id="botaoAssistir">Assistir</button>
+  </div>
+</div>
+
+
   <?php
   $filmes = [
-      ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "imagem" => "partials/velozes.png"],
-      ["titulo" => "Milionário e José Rico", "autor" => "Showlivre", "imagem" => "partials/milionario.jpg"],
-      ["titulo" => "PSG x Inter 2025", "autor" => "Champions League", "imagem" => "partials/psg.jpg"],
-      ["titulo" => "Chaves", "autor" => "Televisa", "imagem" => "partials/chaves.jpg"],
-      ["titulo" => "Breaking Bad", "autor" => "AMC", "imagem" => "partials/BreakingBad.jpg"],
-      ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "imagem" => "partials/kick.jpg"],
-      ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "imagem" => "partials/nba.jpg"],
-      ["titulo" => "Lua", "autor" => "Disney", "imagem" => "partials/lua.jpg"],
+      ["titulo" => "Velozes e Furiosos 11", "autor" => "Universal", "ano" => 2025, "oscars" => 3, "imagem" => "partials/velozes.png"],
+      ["titulo" => "Milionário e José Rico", "autor" => "Showlivre","ano"=> 2000, "oscars"=>0, "imagem" => "partials/milionario.jpg"],
+      ["titulo" => "PSG x Inter 2025", "autor" => "Champions League","ano"=> 2025, "oscars"=>"Jogos Ao vivo", "imagem" => "partials/psg.jpg"],
+      ["titulo" => "Chaves", "autor" => "Televisa", "ano"=> 1999, "oscars"=>0, "imagem" => "partials/chaves.jpg"],
+      ["titulo" => "Breaking Bad", "autor" => "AMC","ano"=> 2005, "oscars" =>1, "imagem" => "partials/BreakingBad.jpg"],
+      ["titulo" => "Kick Buttowski", "autor" => "Disney XD","ano"=> 2000, "oscars" =>0, "imagem" => "partials/kick.jpg"],
+      ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano"=>2025, "oscars"=> "Jogos Ao vivo", "imagem" => "partials/nba.jpg"],
+      ["titulo" => "Lua", "autor" => "Disney","ano"=> 2024,"oscars"=> 0,"imagem" => "partials/lua.jpg"],
   ];
   ?>
 
-  <section class="carrossel-netflix">
+ <section class="carrossel-netflix">
     <h2 class="catalogo-titulo">Mais Populares</h2>
     <div class="container-carrossel">
       <?php 
       for ($i = 0; $i < count($filmes); $i++) { 
       ?>
-          <div class="filme-card">
+          <div class="filme-card" onclick="mostrarDetalhes('<?= $filmes[$i]['titulo'] ?>', '<?= $filmes[$i]['autor'] ?>', <?= $filmes[$i]['ano']?>,<?= $filmes[$i]['oscars']?>, '<?= $filmes[$i]['imagem'] ?>')">
               <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
               <div class="info">
                   <h3><?= $filmes[$i]['titulo'] ?></h3>
@@ -88,34 +103,33 @@
       } 
       ?>
     </div>
-  </section>
+</section>
+
 
 
   <?php 
   $filmes2 = [
-      ["titulo" => "The Office", "autor" => "Showlivre", "imagem" => "partials/theoffice.jpg"],
-      ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "imagem" => "partials/monstrinhos.jpg"],
+      ["titulo" => "The Office", "autor" => "Showlivre","ano"=> 1999,"oscars"=>0, "imagem" => "partials/theoffice.jpg"],
+      ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre","ano"=> 1998, "oscars"=>0, "imagem" => "partials/monstrinhos.jpg"],
+    ["titulo" =>"Homem de Ferro 4", "autor" => "Ryan de Oliveira", "ano"=> 2028,"oscars"=> 0,"imagem" => "partials/homem.jpg"],
   ];
+  for ($i = 0; $i < count($filmes2); $i++) { 
   ?>
 
-  <section class="carrossel-netflix">
-    <h2 class="catalogo-titulo">Para Você</h2>
-    <div class="container-carrossel">
-      <?php 
-      for ($i = 0; $i < count($filmes2); $i++) { 
-      ?>
-          <div class="filme-card">
-              <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
-              <div class="info">
-                  <h3><?= $filmes2[$i]['titulo'] ?></h3>
-                  <p><?= $filmes2[$i]['autor'] ?></p>
-              </div>
-          </div>
-      <?php 
-      } 
-      ?>
+
+
+    <div class="filme-card" onclick="mostrarDetalhes('<?= $filmes2[$i]['titulo'] ?>', '<?= $filmes2[$i]['autor'] ?>', <?= $filmes2[$i]['ano'] ?>, <?= $filmes2[$i]['oscars'] ?>, '<?= $filmes2[$i]['imagem'] ?>')">
+        <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
+        <div class="info">
+            <h3><?= $filmes2[$i]['titulo'] ?></h3>
+            <p><?= $filmes2[$i]['autor'] ?></p>
+        </div>
     </div>
-  </section>
+<?php 
+} 
+?>
+
+
 
 </body>
 
