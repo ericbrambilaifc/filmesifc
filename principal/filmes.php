@@ -65,6 +65,7 @@
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
     ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano" => 2025, "oscars" => "Jogos Ao vivo", "imagem" => "partials/nba.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
+    ["titulo" => "Clube da Luta", "autor" => "Chuck Palahniuk", "ano" => 1999, "oscars" =>0, "imagem" =>"partials/clubedaluta.jpg"],
   ];
   ?>
 
@@ -73,14 +74,46 @@
     <div class="container-carrossel">
       <?php
       for ($i = 0; $i < count($filmes); $i++) {
+     
       ?>
         <div class="filme-card" onclick="mostrarDetalhes('<?= $filmes[$i]['titulo'] ?>', '<?= $filmes[$i]['autor'] ?>', <?= $filmes[$i]['ano'] ?>,<?= $filmes[$i]['oscars'] ?>, '<?= $filmes[$i]['imagem'] ?>')">
           <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
           <div class="info">
             <h3><?= $filmes[$i]['titulo'] ?></h3>
             <p><?= $filmes[$i]['autor'] ?></p>
+
+         <!-- Botão que abre o modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
+          Assistir
+        </button>
+
+      
+
+      </div>
+      
+    </div>
+  <!-- Modal Bootstrap -->
+        <div class="modal fade" id="<?= $modalId ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="<?= $modalId ?>Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content" style="color: white;">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="<?= $modalId ?>Label"><?= $filmes[$i]['titulo'] ?></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" width="200" class="img-fluid mb-3" />
+                <p ><strong >Autor:</strong> <?= $filmes[$i]['autor'] ?></p>
+                <p><strong>Ano:</strong> <?= $filmes[$i]['ano'] ?></p>
+                <p><strong>Oscars:</strong> <?= $filmes[$i]['oscars'] ?></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              
+              </div>
+            </div>
           </div>
         </div>
+        
       <?php
       }
       ?>
@@ -97,12 +130,13 @@
     ["titulo" => "The Office", "autor" => "Showlivre", "ano" => 1999, "oscars" => 0, "imagem" => "partials/theoffice.jpg"],
     ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg"],
     ["titulo" => "Homem de Ferro 4", "autor" => "Ryan de Oliveira", "ano" => 2028, "oscars" => 0, "imagem" => "partials/homem.jpg"],
-   
+   ["titulo" => "Champions", "autor" =>"Gui e Eric","ano"=>2025, "oscars"=> "Jogo ao vivo", "imagem"=>"partials/psg.jpg"],
     ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],
     ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
     ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano" => 2025, "oscars" => "Jogos Ao vivo", "imagem" => "partials/nba.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
+
   ];
   for ($i = 0; $i < count($filmes2); $i++) {
     $modalId = "staticBackdrop" . $i;
@@ -124,17 +158,18 @@
       </div>
       
     </div>
+    
   <!-- Modal Bootstrap -->
         <div class="modal fade" id="<?= $modalId ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="<?= $modalId ?>Label" aria-hidden="true">
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="color: white;">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="<?= $modalId ?>Label"><?= $filmes2[$i]['titulo'] ?></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
               </div>
               <div class="modal-body">
                 <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" width="200" class="img-fluid mb-3" />
-                <p class=""><strong >Autor:</strong> <?= $filmes2[$i]['autor'] ?></p>
+                <p ><strong >Autor:</strong> <?= $filmes2[$i]['autor'] ?></p>
                 <p><strong>Ano:</strong> <?= $filmes2[$i]['ano'] ?></p>
                 <p><strong>Oscars:</strong> <?= $filmes2[$i]['oscars'] ?></p>
               </div>
