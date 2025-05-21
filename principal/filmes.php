@@ -70,7 +70,7 @@
   $filmes = [
     ["titulo" => "Clube da Luta", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/clubedaluta.jpg"],
     ["titulo" => "Homem Aranha", "autor" => "Bob Persichetti", "ano" => 2018, "oscars" => 0, "imagem" => "partials/image.png"],
-    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
+    ["titulo" => "Milionario e Jose Rico", "autor" => "Jose da Silva", "ano" => 1988, "oscars" => 0, "imagem" => "partials/milionario.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
      ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
     ["titulo" => "Pica-Pau", "autor" => "Walter Lantz ", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg"],
