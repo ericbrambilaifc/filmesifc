@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
 
   <!-- Navbar -->
@@ -32,6 +33,22 @@
       </ul>
     </nav>
   </header>
+=======
+  <div>
+    <header>
+        <div class="nav-container">
+            <h3><a href="index.php" class="fw-bold">Filmes+</a></h3>
+            <nav>
+                <ul>
+                    <li><a href="serie.php">Series</a></li>
+                    <li><a href="filmes.php">Filmes</a></li>
+                    <li><a href="sobre.php">Sobre Nós</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+>>>>>>> 5c11d27f0552b2190c1a54dd6dd2c3dbda869e0d
 
   <!-- Carrossel de filmes -->
   <section class="catalogo-section">
