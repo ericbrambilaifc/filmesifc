@@ -8,32 +8,31 @@
 
 
 header {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 40px;
-    background-color: #770000;
-    color: #fff;
-    padding: 20px;
-
+  background-color: #770000;
+  padding: 20px;
 }
 
-header h3 {
-    cursor: pointer;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 500 auto;
 }
 
-#lado-2 {
-    display: flex;
-    padding: 10px;
-    margin-left: 40px;
-    text-decoration: none;
+.nav-container h3 a {
+  color: #fff;
+  text-decoration: none;
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+}
 
-
-#lado-2 a {
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 #text-conheca {

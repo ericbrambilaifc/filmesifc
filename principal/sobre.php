@@ -24,17 +24,18 @@
         }
     </style>
 
-    <header id="header">
-
-        <h3 class="fw-bold">
-            <a href="index.php" style="color: inherit; text-decoration: none; font-weight: 600;">Filmes +</a>
-        </h3>
-        <section id="lado-2">
-            <a class="px-2" href="serie.php">Series</a>
-            <a class="px-2" href="filmes.php">Filmes</a>
-            <a class="fw-bold px-2" href="sobre.php">Sobre Nós</a>
-            <a class="px-2" href="contato.php">Contato</a>
-        </section>
+   <header>
+        <div class="nav-container">
+            <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
+            <nav>
+                <ul>
+                    <li><a href="serie.php">Series</a></li>
+                    <li><a href="filmes.php">Filmes</a></li>
+                    <li><a href="sobre.php">Sobre Nós</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="row">

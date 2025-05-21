@@ -11,31 +11,19 @@
 
 <body>
   <div>
-    <header id="header">
-      <h1>Series</h1>
-      <nav>
-
-
-        <ul>
-          <li>
-          <li><a href="index.php" id="corfundo">Home</a></li>
-
-          <i class="fa-solid fa-house"></i>
-          </li>
-          <li><a href="#" id="corfundo">Autores</a></li>
-
-          <div class="dropdown">
-            <a href="javascript:void(0)">Genero</a>
-            <div class="dropdown-content">
-              <a href="serie.php">Série</a>
-              <a href="filmes.php">Filmes</a>
-              <a href="doc.php">Documentários</a>
-            </div>
-
-          </div>
-        </ul>
-      </nav>
-  </div>
+    <header>
+        <div class="nav-container">
+            <h3><a href="index.php" class="fw-bold">Filmes+</a></h3>
+            <nav>
+                <ul>
+                    <li><a href="serie.php">Series</a></li>
+                    <li><a href="filmes.php">Filmes</a></li>
+                    <li><a href="sobre.php">Sobre Nós</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
   <main>
     <section class="cards">

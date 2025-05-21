@@ -14,24 +14,19 @@
 
 
   <!-- Navbar -->
-  <header id="header">
-    <h1>Catálogo de Filmes</h1>
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="serie.php">Series</a></li>
-        <li><a href="#">Autores</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)">Gênero</a>
-          <div class="dropdown-content">
-            <a href="serie.php">Série</a>
-            <a href="filmes.php">Filmes</a>
-            <a href="doc.php">Documentários</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <header>
+        <div class="nav-container">
+            <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
+            <nav>
+                <ul>
+                    <li><a href="serie.php">Series</a></li>
+                    <li><a href="filmes.php">Filmes</a></li>
+                    <li><a href="sobre.php">Sobre Nós</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
   <!-- Carrossel de filmes -->
   <section class="catalogo-section">
