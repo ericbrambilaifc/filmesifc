@@ -47,13 +47,13 @@
   <div class="modal-dialog">
     <div class="modal-content" style="color: white;">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="serieModalLabel">The Boys</h1>
+        <h1 class="modal-title fs-5" id="serieModalLabel">Homem Aranha</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
       <div class="modal-body">
-        <img src="partials/the.jpg" alt="The Boys" width="200" class="img-fluid mb-3" />
-        <p><strong>Autor:</strong> Eric Kripke</p>
-        <p><strong>Ano:</strong> 2019</p>
+        <img src="partials/image.png" alt="The Boys" width="200" class="img-fluid mb-3" />
+        <p><strong>Autor:</strong> Bob Persichetti</p>
+        <p><strong>Ano:</strong> 2018</p>
         <p><strong>Oscars:</strong> 0</p>
       </div>
       <div class="modal-footer">
@@ -68,8 +68,8 @@
 
   <?php
   $filmes = [
-    ["titulo" => "Clube da Luta", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],
-    ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg"],
+    ["titulo" => "Clube da Luta", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/clubedaluta.jpg"],
+    ["titulo" => "Homem Aranha", "autor" => "Bob Persichetti", "ano" => 2018, "oscars" => 0, "imagem" => "partials/image.png"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
      ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
