@@ -29,7 +29,7 @@
     </header>
 
   <!-- Carrossel de filmes -->
-  <section class="catalogo-section">
+  <section id="catalogo-section">
     <h2 class="catalogo-titulo">Filmes em Destaque</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
