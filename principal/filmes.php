@@ -7,14 +7,16 @@
   <title>Catálogo de Series</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <div>
-    <header>
+
+
+  <!-- Navbar -->
+  <header>
         <div class="nav-container">
-            <h3><a href="index.php" class="fw-bold">Filmes+</a></h3>
+            <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
             <nav>
                 <ul>
                     <li><a href="serie.php">Series</a></li>
@@ -27,17 +29,21 @@
     </header>
 
   <!-- Carrossel de filmes -->
-   <section class="catalogo-section">
-    <h2 class="catalogo-titulo">Série em Destaque</h2>
+  <section id="catalogo-section">
+    <h2 class="catalogo-titulo">Filmes em Destaque</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide card-filme" data-bs-toggle="modal" data-bs-target="#serieModal">
-          <img src="partials/image.png" alt="Eric Kripke" />
+
+        <div class="swiper-slide card-filme">
+          <img src="partials/image.png" alt="Harry Potter" />
           <div class="info">
-            <h3>Homem Aranha </h3>
-            <p>Eric Kripke</p>
+            <h3>Mario Preto</h3>
+            <p>Autor: J. K. Rowling</p>
           </div>
         </div>
+
+      
+
       </div>
     </div>
 </section>
@@ -64,7 +70,7 @@
   </div>
 </div>
 
- 
+
 
   <?php
   $filmes = [
@@ -93,19 +99,7 @@
     ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
-    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg"],
-    ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Pica-Pau", "autor" => "Walter Lantz ", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg"],
-    ["titulo" => "Gravity Falls", "autor" => "Disney", "ano" => 2012, "oscars" => 0, "imagem" => "partials/gravityFalls.jpg"],
-     ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Turma da Monica", "autor" => "Mauricio Araújo de Sousa", "ano" => 1963, "oscars" => 0, "imagem" => "partials/turma.jpg"],
-    ["titulo" => "Prision Braek", "autor" => "Marty Adelstein", "ano" => 2005, "oscars" => 0, "imagem" => "partials/prision.jpg"],
-    ["titulo" => "You", "autor" => "Fox", "ano" => 2017, "oscars" => 0, "imagem" => "partials/you.jpg"],
-    ["titulo" => "Dexter", "autor" => "James Manos, Jr.", "ano" => 2006, "oscars" => 0, "imagem" => "partials/dext.jpg"],
-    ["titulo" => "Sex Education", "autor" => "J. K. Rowling", "ano" => 2019, "oscars" => 0, "imagem" => "partials/sex.jpg"],
-    ["titulo" => "Elite", "autor" => "David Crane", "ano" => 2017, "oscars" => 0, "imagem" => "partials/elite.jpg"],
-    ["titulo" => "DNA do Crime", "autor" => "Heitor Dhalia,", "ano" => 2017, "oscars" => 0, "imagem" => "partials/dnadocrime.jpg"],
+    ["titulo" => "Clube da Luta", "autor" => "Chuck Palahniuk", "ano" => 1999, "oscars" =>0, "imagem" =>"partials/clubedaluta.jpg"],
   ];
   ?>
 
@@ -114,7 +108,6 @@
     <div class="container-carrossel">
       <?php
       for ($i = 0; $i < count($filmes); $i++) {
-        $modalId = "modal-" . $i;
      
       ?>
         <div class="filme-card" onclick="mostrarDetalhes('<?= $filmes[$i]['titulo'] ?>', '<?= $filmes[$i]['autor'] ?>', <?= $filmes[$i]['ano'] ?>,<?= $filmes[$i]['oscars'] ?>, '<?= $filmes[$i]['imagem'] ?>')">
@@ -123,17 +116,17 @@
             <h3><?= $filmes[$i]['titulo'] ?></h3>
             <p><?= $filmes[$i]['autor'] ?></p>
 
-         <!-- Botão que abre o modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
-          Assistir
-        </button>
+            <!-- Botão que abre o modal -->
+            <button style="  padding-bottom: 5px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
+              <a target="_blank" href="https://www.primevideo.com/dp/amzn1.dv.gti.64f13ee5-040c-4e40-9c01-5db1e1f58f6f?autoplay=0&ref_=atv_cf_strg_wb"> <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 16px;"></i></a>
+            </button>
 
-      
 
-      </div>
-      
-    </div>
-  <!-- Modal Bootstrap -->
+
+          </div>
+
+        </div>
+        <!-- Modal Bootstrap -->
         <div class="modal fade" id="<?= $modalId ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="<?= $modalId ?>Label" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content" style="color: white;">
@@ -143,18 +136,18 @@
               </div>
               <div class="modal-body">
                 <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" width="200" class="img-fluid mb-3" />
-                <p ><strong >Autor:</strong> <?= $filmes[$i]['autor'] ?></p>
+                <p><strong>Autor:</strong> <?= $filmes[$i]['autor'] ?></p>
                 <p><strong>Ano:</strong> <?= $filmes[$i]['ano'] ?></p>
                 <p><strong>Oscars:</strong> <?= $filmes[$i]['oscars'] ?></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              
+
               </div>
             </div>
           </div>
         </div>
-        
+
       <?php
       }
       ?>
@@ -169,81 +162,38 @@
   <?php
   $filmes2 = [
     ["titulo" => "The Office", "autor" => "Showlivre", "ano" => 1999, "oscars" => 0, "imagem" => "partials/theoffice.jpg"],
-    ["titulo" => "Oscar no Oásis", "autor" => "Tae-Sik Shin", "ano" => 2011, "oscars" => 0, "imagem" => "partials/lagarto.jpg"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
     ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg"],
+    ["titulo" => "Homem de Ferro 4", "autor" => "Ryan de Oliveira", "ano" => 2028, "oscars" => 0, "imagem" => "partials/homem.jpg"],
+   ["titulo" => "Champions", "autor" =>"Gui e Eric","ano"=>2025, "oscars"=> "Jogo ao vivo", "imagem"=>"partials/psg.jpg"],
     ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],
     ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg"],
     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
+    ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano" => 2025, "oscars" => "Jogos Ao vivo", "imagem" => "partials/nba.jpg"],
     ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
-    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg"],
-    ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Pica-Pau", "autor" => "Walter Lantz ", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg"],
-    ["titulo" => "Gravity Falls", "autor" => "Disney", "ano" => 2012, "oscars" => 0, "imagem" => "partials/gravityFalls.jpg"],
-    ["titulo" => "Turma da Monica", "autor" => "Mauricio Araújo de Sousa", "ano" => 1963, "oscars" => 0, "imagem" => "partials/turma.jpg"],
-    ["titulo" => "Prision Braek", "autor" => "Marty Adelstein", "ano" => 2005, "oscars" => 0, "imagem" => "partials/prision.jpg"],
-    ["titulo" => "You", "autor" => "Fox", "ano" => 2017, "oscars" => 0, "imagem" => "partials/you.jpg"],
-    ["titulo" => "Dexter", "autor" => "James Manos, Jr.", "ano" => 2006, "oscars" => 0, "imagem" => "partials/dext.jpg"],
-    ["titulo" => "Sex Education", "autor" => "J. K. Rowling", "ano" => 2019, "oscars" => 0, "imagem" => "partials/sex.jpg"],
-    ["titulo" => "Elite", "autor" => "David Crane", "ano" => 2017, "oscars" => 0, "imagem" => "partials/elite.jpg"],
-    ["titulo" => "DNA do Crime", "autor" => "Heitor Dhalia,", "ano" => 2017, "oscars" => 0, "imagem" => "partials/dnadocrime.jpg"],
-    ["titulo" => "Euphoria", "autor" => "David Benioff", "ano" => 2019, "oscars" => 0, "imagem" => "partials/eupho.jpg"],
-    ["titulo" => "Adolecente", "autor" => "Tae-Sik Shin", "ano" => 2025, "oscars" => 0, "imagem" => "partials/adole.jpg"],
-    ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg"],
-     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
-    ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
-    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg"],
-     ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg"],
-      ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],
-    ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg"],
-    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
-    ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
-    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg"],
-    ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Pica-Pau", "autor" => "Walter Lantz ", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg"],
-    ["titulo" => "Gravity Falls", "autor" => "Disney", "ano" => 2012, "oscars" => 0, "imagem" => "partials/gravityFalls.jpg"],
-     ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Turma da Monica", "autor" => "Mauricio Araújo de Sousa", "ano" => 1963, "oscars" => 0, "imagem" => "partials/turma.jpg"],
-    ["titulo" => "Prision Braek", "autor" => "Marty Adelstein", "ano" => 2005, "oscars" => 0, "imagem" => "partials/prision.jpg"],
-    ["titulo" => "You", "autor" => "Fox", "ano" => 2017, "oscars" => 0, "imagem" => "partials/you.jpg"],
-    ["titulo" => "Dexter", "autor" => "James Manos, Jr.", "ano" => 2006, "oscars" => 0, "imagem" => "partials/dext.jpg"],
-    ["titulo" => "Sex Education", "autor" => "J. K. Rowling", "ano" => 2019, "oscars" => 0, "imagem" => "partials/sex.jpg"],
-    ["titulo" => "Elite", "autor" => "David Crane", "ano" => 2017, "oscars" => 0, "imagem" => "partials/elite.jpg"],
-    ["titulo" => "DNA do Crime", "autor" => "Heitor Dhalia,", "ano" => 2017, "oscars" => 0, "imagem" => "partials/dnadocrime.jpg"],
-    ["titulo" => "Euphoria", "autor" => "David Benioff", "ano" => 2019, "oscars" => 0, "imagem" => "partials/eupho.jpg"],
-    ["titulo" => "Adolecente", "autor" => "Tae-Sik Shin", "ano" => 2025, "oscars" => 0, "imagem" => "partials/adole.jpg"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg"],
-    ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg"],
-     ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg"],
-    ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg"],
-    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg"],
-    ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg"],
 
-  ];
-  for ($i = 0; $i < count($filmes2); $i++) {
-    $modalId = "staticBackdrop" . $i;
-  ?>
+      ];
+      for ($i = 0; $i < count($filmes2); $i++) {
+        $modalId = "staticBackdrop" . $i;
+      ?>
 
-    <div class="filme-card">
-      <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
-      <div class="info">
-        <h3><?= $filmes2[$i]['titulo'] ?></h3>
-        <p><?= $filmes2[$i]['autor'] ?></p>
+        <div class="filme-card">
+          <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
+          <div class="info">
+            <h3><?= $filmes2[$i]['titulo'] ?></h3>
+            <p><?= $filmes2[$i]['autor'] ?></p>
 
-        <!-- Botão que abre o modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
-          Assistir
-        </button>
+            <!-- Botão que abre o modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
+              Assistir
+            </button>
 
-      
 
-      </div>
-      
-    </div>
-    
-  <!-- Modal Bootstrap -->
+
+          </div>
+
+        </div>
+
+        <!-- Modal Bootstrap -->
         <div class="modal fade" id="<?= $modalId ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="<?= $modalId ?>Label" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content" style="color: white;">
@@ -253,26 +203,26 @@
               </div>
               <div class="modal-body">
                 <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" width="200" class="img-fluid mb-3" />
-                <p ><strong >Autor:</strong> <?= $filmes2[$i]['autor'] ?></p>
+                <p><strong>Autor:</strong> <?= $filmes2[$i]['autor'] ?></p>
                 <p><strong>Ano:</strong> <?= $filmes2[$i]['ano'] ?></p>
                 <p><strong>Oscars:</strong> <?= $filmes2[$i]['oscars'] ?></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              
+
               </div>
             </div>
           </div>
         </div>
-  <?php
-  }
-  ?>
-</div>
+      <?php
+      }
+      ?>
+    </div>
 
-    
+
   </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 
 </html>
