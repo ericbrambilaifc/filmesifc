@@ -36,6 +36,7 @@
           <div class="info">
             <h3>The Boys</h3>
             <p>Eric Kripke</p>
+            <i class="bi bi-exclamation-circle"></i>
           </div>
         </div>
       </div>
