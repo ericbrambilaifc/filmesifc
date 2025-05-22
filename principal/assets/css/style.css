@@ -17,7 +17,6 @@ header {
   align-items: center;
   color: #fff;
   margin: 0 auto;
-  /* corrigido de "500 auto" para "0 auto" */
   max-width: 1200px;
 }
 
@@ -127,7 +126,7 @@ nav ul li a {
   padding: 30px 50px;
 }
 
-.catalogo-titulo {
+#catalogo-titulo {
   font-size: 24px;
   font-weight: bold;
   padding: 10px 5px 0 5px;

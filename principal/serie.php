@@ -27,46 +27,46 @@
     </header>
 
   <!-- Carrossel de serie -->
-  <section id="catalogo-section"></section>
-    <h2 class="catalogo-titulo">Séries em Destaque</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wdrapper">
-        <div class="swiper-slide card-filme" data-bs-toggle="modal" data-bs-target="#serieModal">
-          <img src="partials/the.jpg" alt="Eric Kripke" />
-          <div class="info">
-            <h3>The Boys</h3>
-            <p>Eric Kripke</p>
-          <a style="margin-bottom: 25px;" target="_blank" href="<?= $filme['link'] ?>">
-              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>  
-          </div>
+ <section id="catalogo-section">
+  <h2 id="catalogo-titulo">Séries em Destaque</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card-filme" data-bs-toggle="modal" data-bs-target="#serieModal">
+        <img  src="partials/the.jpg" alt="Eric Kripke" />
+        <div class="info">
+          <h3>The Boys</h3>
+          <p>Eric Kripke</p>
+          <a style="margin-bottom: 25px;" target="_blank" href="https://www.primevideo.com/dp/amzn1.dv.gti.e88762ee-811c-44ae-8dd1-a795c7c1660c?autoplay=0&ref_=atv_cf_strg_wb">
+            <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+          </a>
         </div>
       </div>
     </div>
-</section>
+  </div>
 
-<!-- Modal Bootstrap -->
-<div class="modal fade" id="serieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="serieModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="color: white;">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="serieModalLabel">The Boys</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body">
-        <img src="partials/the.jpg" alt="The Boys" width="200" class="img-fluid mb-3" />
-        <p><strong>Autor:</strong> Eric Kripke</p>
-        <p><strong>Ano:</strong> 2019</p>
-        <p><strong>Oscars:</strong> 0</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Assistir</button><!--botão de inlustração professor-->
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="serieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="serieModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="serieModalLabel">The Boys</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="partials/the.jpg" alt="The Boys" width="200" class="img-fluid mb-3" />
+          <p><strong>Autor:</strong> Eric Kripke</p>
+          <p><strong>Ano:</strong> 2019</p>
+          <p><strong>Oscars:</strong> 0</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Assistir</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
- 
 <!-- Ctes -->
   <?php
   $filmes = [
@@ -112,7 +112,7 @@
   ?>
 
   <section class="carrossel-netflix">
-    <h2 class="catalogo-titulo">Mais Populares</h2>
+    <h2 id="catalogo-titulo">Mais Populares</h2>
     <div class="container-carrossel">
       <?php
       for ($i = 0; $i < count($filmes); $i++) {
@@ -166,7 +166,7 @@
 
   <section class="carrossel-netflix">
 
-    <h2 class="catalogo-titulo">Para você</h2>
+    <h2 id="catalogo-titulo">Para você</h2>
 <div class="container-carrossel">
   <?php
   $filmes2 = [

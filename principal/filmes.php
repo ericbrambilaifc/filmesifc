@@ -28,10 +28,9 @@
   </header>
 
   <section id="catalogo-section">
-    <h2 class="catalogo-titulo">Filme em Destaque</h2>
+    <h2 id="catalogo-titulo">Filme em Destaque</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-
         <div class="swiper-slide card-filme">
           <img src="partials/image.png" alt="Harry Potter" />
           <div class="info">
@@ -41,31 +40,29 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<!-- Modal Bootstrap -->
-<div class="modal fade" id="serieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="serieModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="color: white;">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="serieModalLabel">Homem Aranha</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body">
-        <img src="partials/image.png" alt="The Boys" width="200" class="img-fluid mb-3" />
-        <p><strong>Autor:</strong> Bob Persichetti</p>
-        <p><strong>Ano:</strong> 2018</p>
-        <p><strong>Oscars:</strong> 0</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Assistir</button><!--botão de inlustração professor-->
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="serieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="serieModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="serieModalLabel">Homem Aranha</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="partials/image.png" alt="The Boys" width="200" class="img-fluid mb-3" />
+          <p><strong>Autor:</strong> Bob Persichetti</p>
+          <p><strong>Ano:</strong> 2018</p>
+          <p><strong>Oscars:</strong> 0</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Assistir</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
 
   <?php
   $filmes_populares = [
@@ -135,7 +132,6 @@
     ]
   ];
 
-
   $filmes_para_voce = [
     [
       "titulo" => "The Office",
@@ -202,44 +198,46 @@
       "link" => "https://www.nba.com/"
     ]
   ];
-
   ?>
 
   <!-- Seção Mais Populares -->
   <section class="carrossel-netflix">
-    <h2 class="catalogo-titulo">Mais Populares</h2>
+    <h2 id="catalogo-titulo">Mais Populares</h2>
     <div class="container-carrossel">
-      <?php foreach ($filmes_populares as $filme): ?>
+      <?php for ($i = 0; $i < count($filmes_populares); $i++): ?>
         <div class="filme-card">
-          <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
+          <img src="<?= $filmes_populares[$i]['imagem'] ?>" alt="<?= $filmes_populares[$i]['titulo'] ?>" />
           <div class="info">
-            <h3><?= $filme['titulo'] ?></h3>
-            <p><?= $filme['autor'] ?></p>
-            <a style="margin-bottom: 25px;" target="_blank" href="<?= $filme['link'] ?>">
+            <h3><?= $filmes_populares[$i]['titulo'] ?></h3>
+            <p><?= $filmes_populares[$i]['autor'] ?></p>
+            <a style="margin-bottom: 25px;" target="_blank" href="<?= $filmes_populares[$i]['link'] ?>">
               <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+              <i class="bi bi-exclamation-circle"  style="color: white; font-size: 2rem; margin-left: 6px;"></i>
             </a>
+            
           </div>
         </div>
-      <?php endforeach; ?>
+      <?php endfor; ?>
     </div>
   </section>
 
   <!-- Seção Para Você -->
   <section class="carrossel-netflix">
-    <h2 class="catalogo-titulo">Para Você</h2>
+    <h2 id="catalogo-titulo">Para Você</h2>
     <div class="container-carrossel">
-      <?php foreach ($filmes_para_voce as $filme): ?>
+      <?php for ($i = 0; $i < count($filmes_para_voce); $i++): ?>
         <div class="filme-card">
-          <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>" />
+          <img src="<?= $filmes_para_voce[$i]['imagem'] ?>" alt="<?= $filmes_para_voce[$i]['titulo'] ?>" />
           <div class="info">
-            <h3><?= $filme['titulo'] ?></h3>
-            <p><?= $filme['autor'] ?></p>
-            <a style="margin-bottom: 25px;" target="_blank" href="<?= $filme['link'] ?>">
-              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 16px;"></i>
+            <h3><?= $filmes_para_voce[$i]['titulo'] ?></h3>
+            <p><?= $filmes_para_voce[$i]['autor'] ?></p>
+            <a style="margin-bottom: 25px;" target="_blank" href="<?= $filmes_para_voce[$i]['link'] ?>">
+                          <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+              <i class="bi bi-exclamation-circle"  style="color: white; font-size: 2rem; margin-left: 6px;"></i>
             </a>
           </div>
         </div>
-      <?php endforeach; ?>
+      <?php endfor; ?>
     </div>
   </section>
 
