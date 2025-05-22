@@ -7,7 +7,7 @@
   <title>Catálogo de Series</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -26,18 +26,21 @@
         </div>
     </header>
 
-  <!-- Carrossel de filmes -->
-   <section class="catalogo-section">
-    <h2 class="catalogo-titulo">Série em Destaque</h2>
+  <!-- Carrossel de serie -->
+  <section id="catalogo-section"></section>
+    <h2 class="catalogo-titulo">Séries em Destaque</h2>
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+      <div class="swiper-wdrapper">
         <div class="swiper-slide card-filme" data-bs-toggle="modal" data-bs-target="#serieModal">
           <img src="partials/the.jpg" alt="Eric Kripke" />
           <div class="info">
             <h3>The Boys</h3>
             <p>Eric Kripke</p>
-            <i class="bi bi-exclamation-circle"></i>
+          <a style="margin-bottom: 25px;" target="_blank" href="<?= $filme['link'] ?>">
+              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>  
           </div>
+          
+            </a>
         </div>
       </div>
     </div>
