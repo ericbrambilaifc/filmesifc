@@ -40,8 +40,11 @@
               <a style="margin-bottom: 25px;" target="_blank"
                 href="https://www.primevideo.com/dp/amzn1.dv.gti.e88762ee-811c-44ae-8dd1-a795c7c1660c?autoplay=0&ref_=atv_cf_strg_wb">
                 <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
-                <a href=""></a>
+
               </a>
+              <i class="bi bi-exclamation-circle"
+                style="color: white; font-size: 2rem; margin-left: 6px; cursor:pointer;"
+                onclick="mostrarDetalhes(this)"></i>
             </div>
           </div>
         </div>
@@ -123,7 +126,7 @@
         for ($i = 0; $i < count($filmes); $i++) {
           $modalId = "modal-" . $i;
 
-          ?>
+        ?>
           <div style="padding-bottom: 25px;" class="filme-card"
             onclick="mostrarDetalhes('<?= $filmes[$i]['titulo'] ?>', '<?= $filmes[$i]['autor'] ?>', <?= $filmes[$i]['ano'] ?>,<?= $filmes[$i]['oscars'] ?>, '<?= $filmes[$i]['imagem'] ?>')">
             <img src="<?= $filmes[$i]['imagem'] ?>" alt="<?= $filmes[$i]['titulo'] ?>" />
@@ -175,7 +178,7 @@
             </div>
           </div>
 
-          <?php
+        <?php
         }
         ?>
       </div>
@@ -243,7 +246,7 @@
         ];
         for ($i = 0; $i < count($filmes2); $i++) {
           $modalId = "staticBackdrop" . $i;
-          ?>
+        ?>
 
           <div style="padding-bottom: 25px;" class="filme-card">
             <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
@@ -292,7 +295,7 @@
               </div>
             </div>
           </div>
-          <?php
+        <?php
         }
         ?>
       </div>
@@ -300,59 +303,60 @@
 
     </section>
 
-<footer>
-  <div class="footer-container">
-    <div class="footer-links">
-      <ul>
-        <li><a href="sobre.php">Sobre Nós</a></li>
-        <li><a href="contato.php">Contato</a></li>
-      </ul>
-    </div>
-    <div class="footer-info">
-      <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <style> footer {
-  background-color: #770000;
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 14px;
-}
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="sobre.php">Sobre Nós</a></li>
+            <li><a href="contato.php">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
+        </div>
+      </div>
+      <style>
+        footer {
+          background-color: #770000;
+          color: #fff;
+          padding: 30px 20px;
+          text-align: center;
+          font-size: 14px;
+        }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+        .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
+        .footer-links ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+        }
 
-.footer-links ul li {
-  display: inline;
-}
+        .footer-links ul li {
+          display: inline;
+        }
 
-.footer-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+        .footer-links ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
 
 
-.footer-info {
-  margin-top: 15px;
-  font-size: 12px;
-}
-</style>
-</footer>
+        .footer-info {
+          margin-top: 15px;
+          font-size: 12px;
+        }
+      </style>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"></script>
