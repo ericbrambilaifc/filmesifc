@@ -26,7 +26,7 @@
 <body>
 
   <?php
-  // Dados de Filmes Populares e Para Você
+  
   $filmes_populares = [
    [
       "titulo" => "Clube da Luta",
@@ -577,6 +577,63 @@
   <?php renderSection('Mais Populares', $filmes_populares); ?>
   <?php renderSection('Para Você', $filmes_para_voce); ?>
 
+
+  <!-- Rodapé -->
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <ul>
+        <li><a href="sobre.php">Sobre Nós</a></li>
+        <li><a href="contato.php">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  <style> footer {
+  background-color: #770000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links ul li {
+  display: inline;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.footer-info {
+  margin-top: 15px;
+  font-size: 12px;
+}
+</style>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <script>
    function mostrarDetalhes(btn) {
@@ -595,6 +652,8 @@
 }
 
   </script>
+  
+
 
 </body>
 
