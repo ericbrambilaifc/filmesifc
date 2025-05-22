@@ -433,7 +433,7 @@
         <?php if (!empty($series_filtradas)): ?>
           <?php foreach ($series_filtradas as $serie): ?>
             <div class="serie">
-              <img src="<?= htmlspecialchars($serie['imagem']) ?>" alt="<?= htmlspecialchars($serie['titulo']) ?>">
+              <img style="width: 250px;" src="<?= htmlspecialchars($serie['imagem']) ?>" alt="<?= htmlspecialchars($serie['titulo']) ?>">
               <div>
                 <h3><?= htmlspecialchars($serie['titulo']) ?></h3>
                 <p><strong>Autor:</strong> <?= htmlspecialchars($serie['autor']) ?></p>
