@@ -38,7 +38,7 @@
               <p>Eric Kripke</p>
               <a style="margin-bottom: 25px;" target="_blank" href="https://www.primevideo.com/dp/amzn1.dv.gti.e88762ee-811c-44ae-8dd1-a795c7c1660c?autoplay=0&ref_=atv_cf_strg_wb">
                 <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
-              <a href=""></a>
+              <a href=""></a> 
               </a>
             </div>
           </div>
@@ -128,7 +128,7 @@
 
               <!-- Botão que abre o modal -->
               <button type="button" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>" style="background: transparent; border: none; margin-bottom: 25px;">
-                <i class="bi bi-exclamation-circle" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+                <i class="bi bi-exclamation-circle" style="color: white; font-size: 2rem; margin-left: 6px; cursor: pointer;"></i>
               </button>
 
 
