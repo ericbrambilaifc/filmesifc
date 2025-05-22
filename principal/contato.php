@@ -47,10 +47,13 @@
                     <p>Entre em contato pelo nosso whatsapp ou pelas nossas redes sociais</p>
                     <div class="card" style="width: 20rem;">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="color: #770000;"><i class="bi bi-whatsapp mx-2"></i> 49 9994-0025</li>
-                            <li class="list-group-item" style="color: #770000;"><i class="bi bi-instagram mx-2"></i> Filmes+</li>
-                            <li class="list-group-item" style="color: #770000;"><i class="bi bi-facebook mx-2"></i> Filmes+</li>
-                        </ul>
+                       <li class="list-group-item" style="color: #770000;"><i class="bi bi-whatsapp mx-2"></i> 49 9994-0025
+                    </li>
+                 <li class="list-group-item" style="color: #770000;"><i class="bi bi-instagram mx-2"></i> <a href="https://br.linkedin.com/in/fabio-pinheiro-9b55851a4" target="_blank" style="color: #770000; text-decoration: none;">Fabio+</a>
+                     </li>
+        <li class="list-group-item" style="color: #770000;"> <i class="bi bi-facebook mx-2"></i><a href="https://s2-ge.glbimg.com/ByMCsGebxl7x-iSbiY5Jo2cu5WU=/0x0:719x403/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/y/S/PqRikASeiJJNjXWstyaA/caca-rato.jpg" target="_blank" style="color: #770000; text-decoration: none;">Filmes+</a>
+                    </li>
+                </ul>
                     </div>
                 </div>
 
