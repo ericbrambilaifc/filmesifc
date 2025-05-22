@@ -25,65 +25,6 @@
 
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <div class="nav-container">
-      <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
-      <nav>
-        <ul>
-          <li><a href="serie.php">Series</a></li>
-          <li><a href="filmes.php">Filmes</a></li>
-          <li><a href="sobre.php">Sobre Nós</a></li>
-          <li><a href="contato.php">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="catalogo-section">
-    <h2 id="catalogo-titulo">Filme em Destaque</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide card-filme">
-          <img src="partials/image.png" alt="Harry Potter" />
-          <div class="info">
-            <h3>Mario Preto</h3>
-            <p>Autor: J. K. Rowling</p>
-          </div>
-          <a target="_blank" href="https://www.netflix.com/br/title/81002747" class="play-icon">
-            <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
-          </a>
-
-          <button type="button" class="info-icon btn btn-link text-white p-0" style="background: none; border: none;">
-            <i class="bi bi-exclamation-circle" style="color: white; font-size: 2rem; margin-left: 6px; cursor:pointer;"
-              onclick="mostrarDetalhes(this)"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- modal  -->
-  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content text-white bg-dark">
-        <div class="modal-header">
-          <h5 class="modal-title" style="color: #fff; font-size: 14px;" id="infoModalLabel"></h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div style="color: #fff;" class="modal-body">
-          <img id="modalImagem" src="" alt="" class="img-fluid mb-3" />
-          <p><strong>Autor:</strong> <span id="modalAutor"></span></p>
-          <p><strong>Ano:</strong> <span id="modalAno"></span></p>
-          <p><strong>Oscars:</strong> <span id="modalOscars"></span></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" style="background-color: #991818; color: #fff;" data-bs-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <?php
   // Dados de Filmes Populares e Para Você
   $filmes_populares = [
@@ -108,18 +49,91 @@
   ];
   ?>
 
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-container">
+      <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
+      <nav>
+        <ul>
+          <li><a href="serie.php">Series</a></li>
+          <li><a href="filmes.php">Filmes</a></li>
+          <li><a href="sobre.php">Sobre Nós</a></li>
+          <li><a href="contato.php">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="catalogo-section">
+  <h2 id="catalogo-titulo">Filme em Destaque</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card-filme" 
+           data-titulo="Homem Aranha"
+           data-autor="Bob Persichetti"
+           data-ano="2018"
+           data-oscars="0"
+           data-imagem="partials/image.png">
+        <img src="partials/image.png" alt="Homem Aranha" />
+        <div class="info">
+          <h3>Homem Aranha</h3>
+          <p>Autor: Bob Persichetti</p>
+        </div>
+        <a target="_blank" href="https://www.netflix.com/title/81002747" class="play-icon">
+          <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+        </a>
+
+        <button type="button" class="info-icon btn btn-link text-white p-0" style="background: none; border: none;">
+          <i class="bi bi-exclamation-circle" 
+             style="color: white; font-size: 2rem; margin-left: 6px; cursor:pointer;" 
+             onclick="mostrarDetalhes(this)"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- modal  -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-white bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: #fff; font-size: 14px;" id="infoModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div style="color: #fff;" class="modal-body">
+          <img id="modalImagem" src="" alt="" class="img-fluid mb-3" />
+          <p><strong>Autor:</strong> <span id="modalAutor"></span></p>
+          <p><strong>Ano:</strong> <span id="modalAno"></span></p>
+          <p><strong>Oscars:</strong> <span id="modalOscars"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" style="background-color: #991818; color: #fff;" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Seção Carrossel -->
   <?php function renderSection($tituloSecao, $arrayFilmes)
   { ?>
     <section class="carrossel-netflix">
       <h2 id="catalogo-titulo"><?php echo $tituloSecao; ?></h2>
       <div class="container-carrossel">
+
         <?php for ($i = 0; $i < count($arrayFilmes); $i++): ?>
+
           <div style="padding-bottom: 25px;" class="filme-card" data-titulo="<?= $arrayFilmes[$i]['titulo'] ?>"
             data-autor="<?= $arrayFilmes[$i]['autor'] ?>" data-ano="<?= $arrayFilmes[$i]['ano'] ?>"
             data-oscars="<?= $arrayFilmes[$i]['oscars'] ?>" data-imagem="<?= $arrayFilmes[$i]['imagem'] ?>">
             <img src="<?= $arrayFilmes[$i]['imagem'] ?>" alt="<?= $arrayFilmes[$i]['titulo'] ?>" />
+
+
             <div class="info">
+
               <h3><?= $arrayFilmes[$i]['titulo'] ?></h3>
               <p><?= $arrayFilmes[$i]['autor'] ?></p>
 
@@ -144,17 +158,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    function mostrarDetalhes(btn) {
-      const card = btn.closest('.filme-card');
-      document.getElementById('infoModalLabel').textContent = card.dataset.titulo;
-      document.getElementById('modalImagem').src = card.dataset.imagem;
-      document.getElementById('modalImagem').alt = card.dataset.titulo;
-      document.getElementById('modalAutor').textContent = card.dataset.autor;
-      document.getElementById('modalAno').textContent = card.dataset.ano;
-      document.getElementById('modalOscars').textContent = card.dataset.oscars;
-      const modal = new bootstrap.Modal(document.getElementById('infoModal'));
-      modal.show();
-    }
+   function mostrarDetalhes(btn) {
+  const card = btn.closest('[data-titulo]');
+  if (!card) return;
+
+  document.getElementById('infoModalLabel').textContent = card.dataset.titulo;
+  document.getElementById('modalImagem').src = card.dataset.imagem;
+  document.getElementById('modalImagem').alt = card.dataset.titulo;
+  document.getElementById('modalAutor').textContent = card.dataset.autor;
+  document.getElementById('modalAno').textContent = card.dataset.ano;
+  document.getElementById('modalOscars').textContent = card.dataset.oscars;
+
+  const modal = new bootstrap.Modal(document.getElementById('infoModal'));
+  modal.show();
+}
+
   </script>
 
 </body>
