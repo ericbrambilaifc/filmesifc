@@ -12,7 +12,7 @@
     /* Define largura fixa para a imagem do modal */
     #modalImagem {
       width: 200px;
-      height: auto; /* mantém a proporção */
+      height: auto;
       display: block;
       margin-left: auto;
       margin-right: auto;
