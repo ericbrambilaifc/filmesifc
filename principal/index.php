@@ -94,45 +94,58 @@
         </div>
       </div>
       <style>
-        footer {
-          background-color: #770000;
-          color: #fff;
-          padding: 30px 20px;
-          text-align: center;
-          font-size: 14px;
-        }
+      
+  footer {
+  background-color: #770000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+    position: relative;
+  font-size: 14px;
+}
 
-        .footer-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .footer-links ul {
-          list-style: none;
-          padding: 0;
-          display: flex;
-          gap: 20px;
-        }
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
 
-        .footer-links ul li {
-          display: inline;
-        }
+.footer-links ul li {
+  display: inline;
+}
 
-        .footer-links ul li a {
-          color: #fff;
-          text-decoration: none;
-          font-weight: bold;
-          transition: color 0.3s ease;
-        }
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
 
-        .footer-info {
-          margin-top: 15px;
-          font-size: 12px;
-        }
+.footer-info {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* Garante que o rodapé só apareça no final da página */
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
       </style>
 
 </body>

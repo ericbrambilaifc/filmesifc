@@ -66,7 +66,6 @@
               <p><strong>Oscars:</strong> 0</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Assistir</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
           </div>
