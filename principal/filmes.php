@@ -481,7 +481,7 @@
           <li><a href="filmes.php">Filmes</a></li>
           <li><a href="sobre.php">Sobre Nós</a></li>
           <li><a href="contato.php">Contato</a></li>
-          <li><a href="genero.php">Genero</a></li>
+         
         </ul>
       </nav>
     </div>
