@@ -39,8 +39,6 @@
           <a style="margin-bottom: 25px;" target="_blank" href="<?= $filme['link'] ?>">
               <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>  
           </div>
-          
-            </a>
         </div>
       </div>
     </div>
@@ -69,7 +67,7 @@
 </div>
 
  
-
+<!-- Ctes -->
   <?php
   $filmes = [
     ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],

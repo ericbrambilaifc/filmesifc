@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo de Series</title>
+  <title>Catálogo de Filmes</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -27,26 +27,45 @@
     </div>
   </header>
 
-  <!-- Carrossel de filmes -->
-  <section id="catalogo-section">
-    <h2 class="catalogo-titulo">Filmes em Destaque</h2>
+  <section class="catalogo-section">
+    <h2 class="catalogo-titulo">Filme em Destaque</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide card-filme">
           <img src="partials/image.png" alt="Harry Potter" />
-          <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-            <div>
-              <h3>Mario Preto</h3>
-              <p>Autor: J. K. Rowling</p>
-            </div>
-            <a target="_blank" href="https://www.primevideo.com/dp/amzn1.dv.gti.64f13ee5-040c-4e40-9c01-5db1e1f58f6f?autoplay=0&ref_=atv_cf_strg_wb">
-              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 16px;"></i>
-            </a>
+          <div class="info">
+            <h3>Mario Preto</h3>
+            <p>Autor: J. K. Rowling</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="serieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="serieModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="color: white;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="serieModalLabel">Homem Aranha</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="partials/image.png" alt="The Boys" width="200" class="img-fluid mb-3" />
+        <p><strong>Autor:</strong> Bob Persichetti</p>
+        <p><strong>Ano:</strong> 2018</p>
+        <p><strong>Oscars:</strong> 0</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Assistir</button><!--botão de inlustração professor-->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <?php
   $filmes_populares = [
