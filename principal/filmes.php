@@ -28,24 +28,445 @@
   <?php
   // Dados de Filmes Populares e Para Você
   $filmes_populares = [
-    ["titulo" => "Clube da Luta", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/clubedaluta.jpg", "link" => "https://www.primevideo.com/-/pt/detail/Clube-da-Luta/0N0CS0LQQGWVRXWT1EI6LATOWB"],
-    ["titulo" => "Homem Aranha", "autor" => "Bob Persichetti", "ano" => 2018, "oscars" => 0, "imagem" => "partials/image.png", "link" => "https://www.netflix.com/title/81002747"],
-    ["titulo" => "Milionario e Jose Rico", "autor" => "Jose da Silva", "ano" => 1988, "oscars" => 0, "imagem" => "partials/milionario.jpg", "link" => "https://www.primevideo.com/"],
-    ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg", "link" => "https://www.disneyplus.com/"],
-    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg", "link" => "https://www.netflix.com/title/80025172"],
-    ["titulo" => "Pica-Pau", "autor" => "Walter Lantz", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg", "link" => "https://www.netflix.com/title/80191024"],
-    ["titulo" => "Gravity Falls", "autor" => "Disney", "ano" => 2012, "oscars" => 0, "imagem" => "partials/gravityFalls.jpg", "link" => "https://www.disneyplus.com/"],
-    ["titulo" => "Turma da Monica", "autor" => "Mauricio Araújo de Sousa", "ano" => 1963, "oscars" => 0, "imagem" => "partials/turma.jpg", "link" => "https://www.netflix.com/title/81076856"]
+   [
+      "titulo" => "Clube da Luta",
+      "autor" => "David Fincher",  
+      "ano" => 1999, 
+      "oscars" => 0, 
+      "imagem" => "partials/clubedaluta.jpg",
+      "link" => "https://www.netflix.com/title/26004747"
+    ],
+    [
+      "titulo" => "Homem Aranha", 
+      "autor" => "Bob Persichetti", 
+      "ano" => 2018, 
+      "oscars" => 0, 
+      "imagem" => "partials/image.png",
+      "link" => "https://www.netflix.com/title/81002747"
+    ],
+    [
+      "titulo" => "Milionario e Jose Rico", 
+      "autor" => "Jose da Silva", 
+      "ano" => 1988, 
+      "oscars" => 0, 
+      "imagem" => "partials/milionario.jpg",
+      "link" => "https://www.primevideo.com/"
+    ],
+    [
+      "titulo" => "Tropa de Elite",
+      "autor" => "José Padilha", 
+      "ano" => 2007,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa1.jpg",
+      "link" => "https://www.netflix.com/title/70136120"
+    
+    ],
+    [
+      "titulo" => "tropa de elite 2",
+      "autor" => "José Padilha", 
+      "ano" => 2010,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa2.jpg",
+      "link" => "https://www.netflix.com/title/70136120"
+    ],
+    [
+      "titulo" => "Cidade de Deus",
+      "autor" => "Fernando Meirelles", 
+      "ano" => 2002,  
+      "oscars" => 0, 
+      "imagem" => "partials/utils/cidade.jpg",
+      "link" => "https://www.netflix.com/title/80191024"
+    ],
+    [
+      "titulo" => "Os suburbanos",
+      "autor" => "Luciano Sabino", 
+      "ano" => 2022,
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/suburbanos.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "velozes e furiosos",
+      "autor" => "Rob Cohen", 
+      "ano" => 2001,
+      "oscars" => 0,
+      
+      "imagem" => "partials/utils/furi.jpg",
+      "link" => "https://www.netflix.com/title/81076856"
+    ],
+    [
+      "titulo" => "Velociade Furiosos 2",
+      "autor" => "John Singleton",
+      "ano" => 2003,
+      "oscars" => 0,
+      "imagem" => "partials/utils/furi2.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Sátira SuperVelozes",
+      "autor" => "David Leitch",
+      "ano" => 2019,
+      "oscars" => 0,
+      "imagem" => "partials/utils/supervelozes.jpg",
+      "link" => "https://www.youtube.com/watch?v=lURZze_EB5E"
+    ],
+    [
+      "titulo" => "Ainda estou aqui",
+      "autor" => "David Leitch",
+      "ano" => 2024,
+      "oscars" => 1,
+      "imagem" => "partials/utils/ainda.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Vingadores Guerra Infinita",
+      "autor" => "Anthony e Joe Russo",
+      "ano" => 2018,
+      "oscars" => 0,
+      "imagem" => "partials/utils/vingadores.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ]
   ];
   $filmes_para_voce = [
-    ["titulo" => "The Office", "autor" => "Showlivre", "ano" => 1999, "oscars" => 0, "imagem" => "partials/theoffice.jpg", "link" => "https://www.netflix.com/title/70136120"],
-    ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg", "link" => "https://www.netflix.com/"],
-    ["titulo" => "Homem de Ferro 4", "autor" => "Ryan de Oliveira", "ano" => 2028, "oscars" => 0, "imagem" => "partials/homem.jpg", "link" => "https://www.disneyplus.com/"],
-    ["titulo" => "Champions", "autor" => "Gui e Eric", "ano" => 2025, "oscars" => "Ao vivo", "imagem" => "partials/psg.jpg", "link" => "https://www.espn.com.br/"],
-    ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg", "link" => "https://www.primevideo.com/detail/Chaves/0JGKTUD4UOLES3FIEFMC2RRKJY"],
-    ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg", "link" => "https://www.netflix.com/title/70143836"],
-    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg", "link" => "https://www.disneyplus.com/"],
-    ["titulo" => "NBA Denver Nuggets x Los Angeles", "autor" => "NBA", "ano" => 2025, "oscars" => "Ao vivo", "imagem" => "partials/nba.jpg", "link" => "https://www.nba.com/"]
+ [
+      "titulo" => "Batman", 
+      "autor" => "Matt Reeves",
+      "ano" => 2022,
+      "oscars" => 0, 
+      "imagem" => "partials/utils/bat.jpg",
+      "link" => "https://www.netflix.com/title/70136120"
+    ],
+    [
+      "titulo" => "Coringa", 
+      "autor" => "Todd Phillips",
+      "ano" => 2019,
+      "oscars" => 2, 
+      "imagem" => "partials/utils/coringa.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Homem Aranha 3",
+      "autor" => "Sam Raimi", 
+      "ano" => 2007, 
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/homemaranha.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Pantera Negra",
+      "autor" => "Ryan Coogler", 
+      "ano" => 2018,
+      "oscars" => 3,
+      
+      "imagem" => "partials/utils/pantera.jpg",
+      "link" => "https://www.espn.com.br/"
+    ],
+    [
+      "titulo" => "Enola Holmes",
+      "autor" => "Harry Bradbeer", 
+      "ano" => 2020,
+      
+      "oscars" => 0, 
+      "imagem" => "partials/utils/enola.jpg",
+      "link" => "https://www.primevideo.com/detail/Chaves/0JGKTUD4UOLES3FIEFMC2RRKJY"
+    ],
+    [
+      "titulo" => "Ainda estou aqui",
+      "autor" => "David Leitch", 
+      "ano" => 2024,
+      "oscars" => 1, 
+      "imagem" => "partials/utils/ainda.jpg", 
+      "link" => "https://www.netflix.com/"
+ 
+    ],
+    [
+      "titulo" => "Grenn Book", 
+      "autor" => "Peter Farrelly",
+      "ano" => 1962,
+      "oscars" => 0, 
+      "imagem" => "partials/utils/green.jpg",
+      "link" => "https://www.netflix.com/"
+     
+    ],
+    [
+      "titulo" => "It a Coisa",
+      "autor" => "Andy Muschietti", 
+      "ano" => 2017,
+      "oscars" => 0,
+      "imagem" => "partials/utils/it.jpg",
+      
+      "link" => "https://www.netflix.com/"
+      
+    ],
+    [
+      "titulo" => "O caixão",
+      "autor" => "Gustavo Bonafé",
+      "ano" => 2022,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/caixao.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Corra",
+      "autor" => "Jordan Peele",
+      "ano" => 2017,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/corra.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Rio",
+      "autor" => "Carlos Saldanha",
+      "ano" => 2011,
+      
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/rio.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen",
+      "autor" => "John Lasseter",
+      "ano" => 2006,
+      "oscars" => 0,
+      "imagem" => "partials/utils/1.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 2",
+      "autor" => "John Lasseter",
+      "ano" => 2011,
+      "oscars" => 0,
+      "imagem" => "partials/utils/2.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 3",
+      "autor" => "Brian Fee",
+      "ano" => 2017,
+      "oscars" => 0,
+      "imagem" => "partials/utils/3.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 4",
+      "autor" => "Brian Fee",
+      "ano" => 2023,
+      "oscars" => 0,
+      "imagem" => "partials/utils/4.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Rei Leão",
+      "autor" => "Roger Allers",
+      "ano" => 1994,
+      "oscars" => 2,
+      "imagem" => "partials/utils/rei.jpg",
+      "link" => "https://www.netflix.com/"
+   
+    ],
+     [
+      "titulo" => "Clube da Luta",
+      "autor" => "David Fincher",  
+      "ano" => 1999, 
+      "oscars" => 0, 
+      "imagem" => "partials/clubedaluta.jpg",
+      "link" => "https://www.netflix.com/title/26004747"
+    ],
+    [
+      "titulo" => "Homem Aranha", 
+      "autor" => "Bob Persichetti", 
+      "ano" => 2018, 
+      "oscars" => 0, 
+      "imagem" => "partials/image.png",
+      "link" => "https://www.netflix.com/title/81002747"
+    ],
+    [
+      "titulo" => "Milionario e Jose Rico", 
+      "autor" => "Jose da Silva", 
+      "ano" => 1988, 
+      "oscars" => 0, 
+      "imagem" => "partials/milionario.jpg",
+      "link" => "https://www.primevideo.com/"
+    ],
+    [
+      "titulo" => "Tropa de Elite",
+      "autor" => "José Padilha", 
+      "ano" => 2007,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa1.jpg",
+      "link" => "https://www.netflix.com/title/70136120"
+    
+    ],
+    [
+      "titulo" => "tropa de elite 2",
+      "autor" => "José Padilha", 
+      "ano" => 2010,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa2.jpg",
+      "link" => "https://www.netflix.com/title/70136120"
+    ],
+    [
+      "titulo" => "Cidade de Deus",
+      "autor" => "Fernando Meirelles", 
+      "ano" => 2002,  
+      "oscars" => 0, 
+      "imagem" => "partials/utils/cidade.jpg",
+      "link" => "https://www.netflix.com/title/80191024"
+    ],
+    [
+      "titulo" => "Os suburbanos",
+      "autor" => "Luciano Sabino", 
+      "ano" => 2022,
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/suburbanos.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "velozes e furiosos",
+      "autor" => "Rob Cohen", 
+      "ano" => 2001,
+      "oscars" => 0,
+      
+      "imagem" => "partials/utils/furi.jpg",
+      "link" => "https://www.netflix.com/title/81076856"
+    ],
+    [
+      "titulo" => "Velociade Furiosos 2",
+      "autor" => "John Singleton",
+      "ano" => 2003,
+      "oscars" => 0,
+      "imagem" => "partials/utils/furi2.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Sátira SuperVelozes",
+      "autor" => "David Leitch",
+      "ano" => 2019,
+      "oscars" => 0,
+      "imagem" => "partials/utils/supervelozes.jpg",
+      "link" => "https://www.youtube.com/watch?v=lURZze_EB5E"
+    ],
+    [
+      "titulo" => "Ainda estou aqui",
+      "autor" => "David Leitch",
+      "ano" => 2024,
+      "oscars" => 1,
+      "imagem" => "partials/utils/ainda.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Vingadores Guerra Infinita",
+      "autor" => "Anthony e Joe Russo",
+      "ano" => 2018,
+      "oscars" => 0,
+      "imagem" => "partials/utils/vingadores.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+     [
+      "titulo" => "Homem Aranha 3",
+      "autor" => "Sam Raimi", 
+      "ano" => 2007, 
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/homemaranha.jpg",
+      "link" => "https://www.disneyplus.com/"
+    ],
+    [
+      "titulo" => "Pantera Negra",
+      "autor" => "Ryan Coogler", 
+      "ano" => 2018,
+      "oscars" => 3,
+      
+      "imagem" => "partials/utils/pantera.jpg",
+      "link" => "https://www.espn.com.br/"
+    ],
+    [
+      "titulo" => "Enola Holmes",
+      "autor" => "Harry Bradbeer", 
+      "ano" => 2020,
+      
+      "oscars" => 0, 
+      "imagem" => "partials/utils/enola.jpg",
+      "link" => "https://www.primevideo.com/detail/Chaves/0JGKTUD4UOLES3FIEFMC2RRKJY"
+    ],
+    [
+      "titulo" => "Ainda estou aqui",
+      "autor" => "David Leitch", 
+      "ano" => 2024,
+      "oscars" => 1, 
+      "imagem" => "partials/utils/ainda.jpg", 
+      "link" => "https://www.netflix.com/"
+ 
+    ],
+    [
+      "titulo" => "Grenn Book", 
+      "autor" => "Peter Farrelly",
+      "ano" => 1962,
+      "oscars" => 0, 
+      "imagem" => "partials/utils/green.jpg",
+      "link" => "https://www.netflix.com/"
+     
+    ],
+    [
+      "titulo" => "It a Coisa",
+      "autor" => "Andy Muschietti", 
+      "ano" => 2017,
+      "oscars" => 0,
+      "imagem" => "partials/utils/it.jpg",
+      
+      "link" => "https://www.netflix.com/"
+      
+    ],
+    [
+      "titulo" => "O caixão",
+      "autor" => "Gustavo Bonafé",
+      "ano" => 2022,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/caixao.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Corra",
+      "autor" => "Jordan Peele",
+      "ano" => 2017,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/corra.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Rio",
+      "autor" => "Carlos Saldanha",
+      "ano" => 2011,
+      
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/rio.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen",
+      "autor" => "John Lasseter",
+      "ano" => 2006,
+      "oscars" => 0,
+      "imagem" => "partials/utils/1.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 2",
+      "autor" => "John Lasseter",
+      "ano" => 2011,
+      "oscars" => 0,
+      "imagem" => "partials/utils/2.jpg",
+      "link" => "https://www.netflix.com/"
+    ],
   ];
   ?>
 
