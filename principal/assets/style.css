@@ -217,21 +217,3 @@ nav ul li a {
   margin-top: 30px;
 }
 
-<<<<<<< HEAD
-
-=======
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-}
->>>>>>> 0911f7afa617328241ddbb77977e09cd986fdd0b
