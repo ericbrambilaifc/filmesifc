@@ -62,7 +62,7 @@
     
     ],
     [
-      "titulo" => "tropa de elite 2",
+      "titulo" => "Tropa de Elite 2",
       "autor" => "José Padilha", 
       "ano" => 2010,
       "oscars" => 0,
@@ -78,7 +78,7 @@
       "link" => "https://www.netflix.com/title/80191024"
     ],
     [
-      "titulo" => "Os suburbanos",
+      "titulo" => "Os Suburbanos",
       "autor" => "Luciano Sabino", 
       "ano" => 2022,
        
@@ -87,7 +87,7 @@
       "link" => "https://www.disneyplus.com/"
     ],
     [
-      "titulo" => "velozes e furiosos",
+      "titulo" => "Velozes e Furiosos",
       "autor" => "Rob Cohen", 
       "ano" => 2001,
       "oscars" => 0,
@@ -112,7 +112,7 @@
       "link" => "https://www.youtube.com/watch?v=lURZze_EB5E"
     ],
     [
-      "titulo" => "Ainda estou aqui",
+      "titulo" => "Ainda Estou Aqui",
       "autor" => "David Leitch",
       "ano" => 2024,
       "oscars" => 1,
@@ -201,7 +201,7 @@
       
     ],
     [
-      "titulo" => "O caixão",
+      "titulo" => "O Caixão",
       "autor" => "Gustavo Bonafé",
       "ano" => 2022,
       
@@ -229,7 +229,7 @@
       "link" => "https://www.netflix.com/"
     ],
     [
-      "titulo" => "Relampago do mcqueen",
+      "titulo" => "Relampago Mcqueen",
       "autor" => "John Lasseter",
       "ano" => 2006,
       "oscars" => 0,
@@ -237,7 +237,7 @@
       "link" => "https://www.netflix.com/"
     ],
     [
-      "titulo" => "Relampago do mcqueen 2",
+      "titulo" => "Relampago Mcqueen 2",
       "autor" => "John Lasseter",
       "ano" => 2011,
       "oscars" => 0,
@@ -245,7 +245,7 @@
       "link" => "https://www.netflix.com/"
     ],
     [
-      "titulo" => "Relampago do mcqueen 3",
+      "titulo" => "Relampago Mcqueen 3",
       "autor" => "Brian Fee",
       "ano" => 2017,
       "oscars" => 0,
@@ -253,7 +253,7 @@
       "link" => "https://www.netflix.com/"
     ],
     [
-      "titulo" => "Relampago do mcqueen 4",
+      "titulo" => "Relampago Mcqueen 4",
       "autor" => "Brian Fee",
       "ano" => 2023,
       "oscars" => 0,
@@ -303,7 +303,7 @@
     
     ],
     [
-      "titulo" => "tropa de elite 2",
+      "titulo" => "Tropa de Elite 2",
       "autor" => "José Padilha", 
       "ano" => 2010,
       "oscars" => 0,
@@ -319,7 +319,7 @@
       "link" => "https://www.netflix.com/title/80191024"
     ],
     [
-      "titulo" => "Os suburbanos",
+      "titulo" => "Os Suburbanos",
       "autor" => "Luciano Sabino", 
       "ano" => 2022,
        
@@ -328,7 +328,7 @@
       "link" => "https://www.disneyplus.com/"
     ],
     [
-      "titulo" => "velozes e furiosos",
+      "titulo" => "Velozes e Furiosos",
       "autor" => "Rob Cohen", 
       "ano" => 2001,
       "oscars" => 0,
@@ -337,7 +337,7 @@
       "link" => "https://www.netflix.com/title/81076856"
     ],
     [
-      "titulo" => "Velociade Furiosos 2",
+      "titulo" => "Velozes e Furiosos 2",
       "autor" => "John Singleton",
       "ano" => 2003,
       "oscars" => 0,
@@ -353,7 +353,7 @@
       "link" => "https://www.youtube.com/watch?v=lURZze_EB5E"
     ],
     [
-      "titulo" => "Ainda estou aqui",
+      "titulo" => "Ainda Estou Aqui",
       "autor" => "David Leitch",
       "ano" => 2024,
       "oscars" => 1,
@@ -424,7 +424,7 @@
       
     ],
     [
-      "titulo" => "O caixão",
+      "titulo" => "O Caixão",
       "autor" => "Gustavo Bonafé",
       "ano" => 2022,
       
