@@ -72,6 +72,512 @@
           </div>
         </div>
       </div>
+
+  <?php
+// Lista de filmes
+$filmes_populares = [ [
+      "titulo" => "Clube da Luta",
+      "autor" => "David Fincher",  
+      "ano" => 1999, 
+      "oscars" => 0, 
+      "imagem" => "partials/clubedaluta.jpg",
+        "link" => "#",
+      "genero" => "Drama",
+      "classificacao" => "18+"
+    ],
+    [
+      "titulo" => "Homem Aranha", 
+      "autor" => "Bob Persichetti", 
+      "ano" => 2018, 
+      "oscars" => 0, 
+      "imagem" => "partials/image.png",
+        "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Milionario e Jose Rico", 
+      "autor" => "Jose da Silva", 
+      "ano" => 1988, 
+      "oscars" => 0, 
+      "imagem" => "partials/milionario.jpg",
+      "link" => "#",
+      "genero" => "Comédia",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Tropa de Elite",
+      "autor" => "José Padilha", 
+      "ano" => 2007,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa1.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "16+"
+    
+    ],
+    [
+      "titulo" => "tropa de elite 2",
+      "autor" => "José Padilha", 
+      "ano" => 2010,
+      "oscars" => 0,
+      "imagem" => "partials/utils/tropa2.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "16+"
+    ],
+    [
+      "titulo" => "Cidade de Deus",
+      "autor" => "Fernando Meirelles", 
+      "ano" => 2002,  
+      "oscars" => 0, 
+      "imagem" => "partials/utils/cidade.jpg",
+      "link" => "#",
+      "genero" => "Drama",
+      "classificacao" => "16+"
+    ],
+    [
+      "titulo" => "Os suburbanos",
+      "autor" => "Luciano Sabino", 
+      "ano" => 2022,
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/suburbanos.jpg",
+      "link" => "#",
+      "genero" => "Comédia",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "velozes e furiosos",
+      "autor" => "Rob Cohen", 
+      "ano" => 2001,
+      "oscars" => 0,
+      
+      "imagem" => "partials/utils/furi.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Velociade Furiosos 2",
+      "autor" => "John Singleton",
+      "ano" => 2003,
+      "oscars" => 0,
+      "imagem" => "partials/utils/furi2.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Sátira SuperVelozes",
+      "autor" => "David Leitch",
+      "ano" => 2019,
+      "oscars" => 0,
+      "imagem" => "partials/utils/supervelozes.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Ainda estou aqui",
+      "autor" => "David Leitch",
+      "ano" => 2024,
+      "oscars" => 1,
+      "imagem" => "partials/utils/ainda.jpg",
+      "genero" => "Ação",
+      "classificacao" => "12+",
+      "link" => "https://g1.globo.com/jornal-nacional/noticia/2025/03/03/ainda-estou-aqui-primeiro-filme-original-globoplay-vence-o-oscar-de-melhor-filme-internacional.ghtml"
+    ],
+    [
+      "titulo" => "Vingadores Guerra Infinita",
+      "autor" => "Anthony e Joe Russo",
+      "ano" => 2018,
+      "oscars" => 0,
+      "imagem" => "partials/utils/vingadores.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Batman", 
+      "autor" => "Matt Reeves",
+      "ano" => 2022,
+      "oscars" => 0, 
+      "imagem" => "partials/utils/bat.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Coringa", 
+      "autor" => "Todd Phillips",
+      "ano" => 2019,
+      "oscars" => 2, 
+      "imagem" => "partials/utils/coringa.jpg",
+      "link" => "#",
+      "genero" => "Drama",
+      "classificacao" => "16+",
+      "link2" => ""
+    ],
+    [
+      "titulo" => "Homem Aranha 3",
+      "autor" => "Sam Raimi", 
+      "ano" => 2007, 
+       
+      "oscars" => 0, 
+      "imagem" => "partials/utils/homemaranha.jpg",
+      "link" => "#",
+      "genero" => "Ação",
+      "classificacao" => "12+"
+    ],
+    [
+      "titulo" => "Pantera Negra",
+      "autor" => "Ryan Coogler", 
+      "ano" => 2018,
+      "oscars" => 3,
+      
+      "imagem" => "partials/utils/pantera.jpg",
+      
+      "genero" => "Ação",
+      "classificacao" => "12+",
+      "link" => "https://g1.globo.com/jornal-nacional/noticia/2025/03/03/pantera-negra-2-ganha-o-oscar-de-melhor-filme.ghtml"
+
+    ],
+    [
+      "titulo" => "Enola Holmes",
+      "autor" => "Harry Bradbeer", 
+      "ano" => 2020,
+      
+      "oscars" => 0, 
+      "imagem" => "partials/utils/enola.jpg",
+      "link" => "#",
+      "genero" => "Aventura",
+      "classificacao" => "10+"
+    ],
+    
+    [
+      "titulo" => "Grenn Book", 
+      "autor" => "Peter Farrelly",
+      "ano" => 1962,
+      "oscars" => 0, 
+      "imagem" => "partials/utils/green.jpg",
+      "link" => "#",
+      "genero" => "Drama",
+      "classificacao" => "12+"
+     
+    ],
+    [
+      "titulo" => "It a Coisa",
+      "autor" => "Andy Muschietti", 
+      "ano" => 2017,
+      "oscars" => 0,
+      "imagem" => "partials/utils/it.jpg",
+      
+      "link" => "#",
+      "genero" => "Terror",
+      "classificacao" => "16+"
+      
+    ],
+    [
+      "titulo" => "O caixão",
+      "autor" => "Gustavo Bonafé",
+      "ano" => 2022,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/caixao.jpg",
+      "link" => "#",
+      "genero" => "Terror",
+      "classificacao" => "16+"
+    ],
+    [
+      "titulo" => "Corra",
+      "autor" => "Jordan Peele",
+      "ano" => 2017,
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/corra.jpg",
+      "link" => "#",
+      "genero" => "Terror",
+      "classificacao" => "16+"
+    ],
+    [
+      "titulo" => "Rio",
+      "autor" => "Carlos Saldanha",
+      "ano" => 2011,
+      
+      
+      "oscars" => 0,
+      "imagem" => "partials/utils/rio.jpg",
+      "link" => "#",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen",
+      "autor" => "John Lasseter",
+      "ano" => 2006,
+      "oscars" => 0,
+      "imagem" => "partials/utils/1.jpg",
+      "link" => "#",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 2",
+      "autor" => "John Lasseter",
+      "ano" => 2011,
+      "oscars" => 0,
+      "imagem" => "partials/utils/2.jpg",
+      "link" => "#",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 3",
+      "autor" => "Brian Fee",
+      "ano" => 2017,
+      "oscars" => 0,
+      "imagem" => "partials/utils/3.jpg",
+      "link" => "#",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Relampago do mcqueen 4",
+      "autor" => "Brian Fee",
+      "ano" => 2023,
+      "oscars" => 0,
+      "imagem" => "partials/utils/4.jpg",
+      "link" => "#",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+    ],
+    [
+      "titulo" => "Rei Leão",
+      "autor" => "Roger Allers",
+      "ano" => 1994,
+      "oscars" => 2,
+      "imagem" => "partials/utils/rei.jpg",
+      "link" => "https://www.bing.com/search?q=ganhou%20oscar%20o%20rei%20leao&qs=n&form=QBRE&sp=-1&lq=0&pq=ganhou%20oscar%20o%20rei%20leao&sc=8-23&sk=&cvid=03D89668B1614065B8E6DFC9FB108134",
+      "genero" => "Animação",
+      "classificacao" => "10+"
+   
+    ],
+
+  ];
+ 
+  
+
+// Lista de séries
+$series_populares = [
+     ["titulo" => "The Office", "autor" => "Showlivre", "ano" => 1999, "oscars" => 0, "imagem" => "partials/theoffice.jpg", "link" => "#", "genero" => "Comédia"],
+    ["titulo" => "Oscar no Oásis", "autor" => "Tae-Sik Shin", "ano" => 2011, "oscars" => 0, "imagem" => "partials/lagarto.jpg", "link" => "#", "genero"=> "Animação"],
+    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg", "link" => "#", "genero" => "Drama"],
+    ["titulo" => "Os Sete Monstrinhos", "autor" => "Showlivre", "ano" => 1998, "oscars" => 0, "imagem" => "partials/monstrinhos.jpg", "link" => "#", "genero" => "Animação"],
+    ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg", "link" => "#", "genero" => "Comédia"],
+    ["titulo" => "Breaking Bad", "autor" => "AMC", "ano" => 2005, "oscars" => 1, "imagem" => "partials/BreakingBad.jpg", "link" => "https://pt.wikipedia.org/wiki/Breaking_Bad", "genero" => "Drama"],
+    ["titulo" => "Kick Buttowski", "autor" => "Disney XD", "ano" => 2000, "oscars" => 0, "imagem" => "partials/kick.jpg", "link" => "#", "genero" => "Animação"],
+    ["titulo" => "Lua", "autor" => "Disney", "ano" => 2024, "oscars" => 0, "imagem" => "partials/lua.jpg", "link" => "#", "genero" => "Ação"],
+    ["titulo" => "Phineas e Ferb", "autor" => "Disney", "ano" => 2007, "oscars" => 0, "imagem" => "partials/phineasFerb.jpg", "link" => "#", "genero" => "Animação"],
+    ["titulo" => "The good Place", "autor" => "Showlivre", "ano" => 2016, "oscars" => 0, "imagem" => "partials/good.jpg", "link" => "#", "genero" => "Comédia"],
+    ["titulo" => "Narcos", "autor" => "Cris Moura", "ano" => 2017, "oscars" => 0, "imagem" => "partials/narcos.jpg", "link" => "#", "genero" => "Drama "],
+    ["titulo" => "Pica-Pau", "autor" => "Walter Lantz", "ano" => 1940, "oscars" => 0, "imagem" => "partials/pica.jpg", "link" => "#", "genero" => "Animação"],
+    ["titulo" => "Gravity Falls", "autor" => "Disney", "ano" => 2012, "oscars" => 0, "imagem" => "partials/gravityFalls.jpg", "link" => "#", "genero" => "Mistério/Animação"],
+    ["titulo" => "Turma da Monica", "autor" => "Mauricio Araújo de Sousa", "ano" => 1963, "oscars" => 0, "imagem" => "partials/turma.jpg", "link" => "#", "genero" => "Animação"],
+    ["titulo" => "Prision Braek", "autor" => "Marty Adelstein", "ano" => 2005, "oscars" => 0, "imagem" => "partials/prision.jpg", "link" => "#", "genero" => "Ação"],
+    ["titulo" => "You", "autor" => "Fox", "ano" => 2017, "oscars" => 0, "imagem" => "partials/you.jpg", "link" => "#", "genero" => "Drama"],
+    ["titulo" => "Dexter", "autor" => "James Manos, Jr.", "ano" => 2006, "oscars" => 0, "imagem" => "partials/dext.jpg", "link" => "#", "genero" => "Drama"],
+    ["titulo" => "Sex Education", "autor" => "J. K. Rowling", "ano" => 2019, "oscars" => 0, "imagem" => "partials/sex.jpg", "link" => "#", "genero" => "Comédia"],
+    ["titulo" => "Elite", "autor" => "David Crane", "ano" => 2017, "oscars" => 0, "imagem" => "partials/elite.jpg", "link" => "#", "genero" => "Drama"],
+    ["titulo" => "DNA do Crime", "autor" => "Heitor Dhalia", "ano" => 2017, "oscars" => 0, "imagem" => "partials/dnadocrime.jpg", "link" => "#", "genero" => "Ação"],
+    ["titulo" => "Euphoria", "autor" => "David Benioff", "ano" => 2019, "oscars" => 0, "imagem" => "partials/eupho.jpg", "link" => "#", "genero" => "Drama"],
+    ["titulo" => "Adolecencia", "autor" => "Tae-Sik Shin", "ano" => 2025, "oscars" => 0, "imagem" => "partials/adole.jpg", "link" => "#", "genero" => "Drama"]
+
+];
+
+// Pega os gêneros únicos
+$generos = array_unique(array_map(fn($filme) => $filme["genero"], $filmes_populares));
+sort($generos);
+
+// Verifica se um gênero foi selecionado
+$genero_selecionado = $_GET['genero'] ?? null;
+
+// Filtra os filmes pelo gênero selecionado
+$filmes_filtrados = $genero_selecionado
+    ? array_filter($filmes_populares, fn($filme) => $filme["genero"] === $genero_selecionado)
+    : [];
+
+// Pega os gêneros de séries (opcional)
+$generos_series = array_unique(array_map(fn($serie) => $serie["genero"] ?? '', $series_populares));
+sort($generos_series);
+$series_filtradas = $genero_selecionado
+  ? array_filter($series_populares, fn($serie) => ($serie["genero"] ?? '') === $genero_selecionado)
+  : [];
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Generos</title>
+      <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .filme { border: 1px solid #ccc; padding: 10px; margin: 10px 0; display: flex; gap: 10px; }
+    .filme img { width: 100px; height: auto; }
+    .serie {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.serie img {
+  width: 100px;
+  height: auto;
+}
+  </style>
+</head>
+<body>
+ <header>
+        <div class="nav-container">
+      <h3><a href="index.html" class="fw-bold">Filmes+</a></h3>
+      <nav>
+        <ul>
+          <li><a href="serie.php">Series</a></li>
+          <li><a href="filmes.php">Filmes</a></li>
+          <li><a href="sobre.php">Sobre Nós</a></li>
+          <li><a href="contato.php">Contato</a></li>
+          <li><a href="genero.php">Genero</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <h1>Filmes por Gênero</h1>
+    <form method="get">
+        <label for="genero">Escolha um gênero:</label>
+        <select name="genero" id="genero" onchange="this.form.submit()">
+            <option value="">-- Todos --</option>
+            <?php foreach ($generos as $genero): ?>
+                <option value="<?= $genero ?>" <?= $genero === $genero_selecionado ? 'selected' : '' ?>><?= $genero ?></option>
+            <?php endforeach; ?>
+        </select>
+    </form>
+
+    <?php if ($genero_selecionado): ?>
+        <h2>Filmes do gênero "<?= htmlspecialchars($genero_selecionado) ?>"</h2>
+        <?php foreach ($filmes_filtrados as $filme): ?>
+            <div class="filme">
+                <img src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
+                <div>
+                    <h3><?= $filme['titulo'] ?></h3>
+                    <p><strong>Autor:</strong> <?= $filme['autor'] ?></p>
+                    <p><strong>Ano:</strong> <?= $filme['ano'] ?></p>
+                    <p><strong>Classificação:</strong> <?= $filme['classificacao'] ?></p>
+                    <p><a href="<?= $filme['link'] ?>">Ver mais</a></p>
+                </div>
+            </div>
+        <?php endforeach; ?>
+
+        <h2>Séries do gênero "<?= htmlspecialchars($genero_selecionado) ?>"</h2>
+        <?php foreach ($series_filtradas as $serie): ?>
+            <div class="serie">
+                <img src="<?= $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
+                <div>
+                    <h3><?= $serie['titulo'] ?></h3>
+                    <p><strong>Autor:</strong> <?= $serie['autor'] ?></p>
+                    <p><strong>Ano:</strong> <?= $serie['ano'] ?></p>
+                    <p><a href="<?= $serie['link'] ?>">Ver mais</a></p>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>Selecione um gênero para ver os filmes e séries correspondentes.</p>
+    <?php endif; ?>
+
+ <!-- Rodapé -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <ul>
+        <li><a href="sobre.php">Sobre Nós</a></li>
+        <li><a href="contato.php">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  
+  <style>
+  
+
+  footer {
+  background-color: #770000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+    position: relative;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links ul li {
+  display: inline;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.footer-info {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* Garante que o rodapé só apareça no final da página */
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+</style>
+</footer>
+
+</body>
+</html>
+
     </section>
 
     <!-- Ctes -->
@@ -315,47 +821,7 @@
           <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
         </div>
       </div>
-      <style>
-        footer {
-          background-color: #770000;
-          color: #fff;
-          padding: 30px 20px;
-          text-align: center;
-          font-size: 14px;
-        }
 
-        .footer-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .footer-links ul {
-          list-style: none;
-          padding: 0;
-          display: flex;
-          gap: 20px;
-        }
-
-        .footer-links ul li {
-          display: inline;
-        }
-
-        .footer-links ul li a {
-          color: #fff;
-          text-decoration: none;
-          font-weight: bold;
-          transition: color 0.3s ease;
-        }
-
-
-        .footer-info {
-          margin-top: 15px;
-          font-size: 12px;
-        }
-      </style>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
