@@ -244,10 +244,10 @@
           $modalId = "staticBackdrop" . $i;
           ?>
 
-          <div class="filme-card">
+          <div style="padding-bottom: 25px;" class="filme-card">
             <img src="<?= $filmes2[$i]['imagem'] ?>" alt="<?= $filmes2[$i]['titulo'] ?>" />
             <div class="info">
-              <h3><?= $filmes2[$i]['titulo'] ?></h3>
+              <h3 style="margin-top: 22px;"><?= $filmes2[$i]['titulo'] ?></h3>
               <p><?= $filmes2[$i]['autor'] ?></p>
 
               <!-- Botão que abre o modal -->
