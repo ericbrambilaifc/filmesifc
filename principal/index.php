@@ -81,19 +81,59 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-white py-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <h3 class="h5">Desenvolvido por Eric Brambila e Guilherme Rayan Padilha</h3>
-            </div>
-            <div class="col-12 col-md-6 text-md-end">
-                <h3 class="h5">© IFC - PROGRAMAÇÃO 2025</h3>
-            </div>
+       <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="sobre.php">Sobre Nós</a></li>
+            <li><a href="contato.php">Contato</a></li>
+          </ul>
         </div>
-    </div>
-</footer>
+        <div class="footer-info">
+          <p>&copy; 2025 Filmes+. Todos os direitos reservados.</p>
+        </div>
+      </div>
+      <style>
+        footer {
+          background-color: #770000;
+          color: #fff;
+          padding: 30px 20px;
+          text-align: center;
+          font-size: 14px;
+        }
 
+        .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer-links ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+        }
+
+        .footer-links ul li {
+          display: inline;
+        }
+
+        .footer-links ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+
+
+        .footer-info {
+          margin-top: 15px;
+          font-size: 12px;
+        }
+      </style>
 
 </body>
 <script>
