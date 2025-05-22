@@ -38,7 +38,7 @@
             <p>Eric Kripke</p>
             <i class="bi bi-exclamation-circle"></i>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
 </section>
@@ -66,7 +66,7 @@
 </div>
 
  
-
+<!-- Ctes -->
   <?php
   $filmes = [
     ["titulo" => "Chaves", "autor" => "Televisa", "ano" => 1999, "oscars" => 0, "imagem" => "partials/chaves.jpg"],
