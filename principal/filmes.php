@@ -211,9 +211,12 @@
             <h3><?= $filmes_populares[$i]['titulo'] ?></h3>
             <p><?= $filmes_populares[$i]['autor'] ?></p>
             <a style="margin-bottom: 25px;" target="_blank" href="<?= $filmes_populares[$i]['link'] ?>">
-              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+              <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i></a>
+            <a href="contato.php">
               <i class="bi bi-exclamation-circle"  style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+
             </a>
+            
             
           </div>
         </div>

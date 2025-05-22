@@ -38,6 +38,7 @@
               <p>Eric Kripke</p>
               <a style="margin-bottom: 25px;" target="_blank" href="https://www.primevideo.com/dp/amzn1.dv.gti.e88762ee-811c-44ae-8dd1-a795c7c1660c?autoplay=0&ref_=atv_cf_strg_wb">
                 <i class="bi bi-play-circle-fill" style="color: white; font-size: 2rem; margin-left: 6px;"></i>
+              <a href=""></a>
               </a>
             </div>
           </div>
