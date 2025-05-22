@@ -514,7 +514,7 @@
         </div>
       </div>
     </div>
-    <h1>Séries por Gênero</h1>
+    <h1>Filmes por Gênero</h1>
     <form method="get">
       <label for="genero">Escolha um gênero:</label>
       <select name="genero" id="genero" onchange="this.form.submit()">
