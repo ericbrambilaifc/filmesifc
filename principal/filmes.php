@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <section class="catalogo-section">
+  <section id="catalogo-section">
     <h2 class="catalogo-titulo">Filme em Destaque</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
